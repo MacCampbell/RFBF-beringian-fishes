@@ -1,0 +1,138 @@
+---
+title: "Supplemental-Figure-S1"
+author: "Mac Campbell"
+date: "November 08, 2023"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE, message=FALSE)
+```
+
+## Data
+
+Read in a fasta, remove short seqs, align and trim.
+
+Trimming to 600 bp
+```{sh, eval=FALSE}
+./shortenSeqs.pl seqdump11182021.txt > 1.fasta
+```
+
+Now have 628 sequences.    
+
+Aligning.    
+
+```{sh, eval=FALSE}
+mafft 1.fasta > 2.afas
+```
+
+Trim.   
+
+```{sh, eval=FALSE}
+java -Xmx3000M -jar ~/BMGE-1.12/BMGE.jar -i 2.afas -t DNA -o 3.afas
+```
+ 
+ DNA sequence alignment 2.afas
+   before : 628 sequences / 1511 characters
+   after :  628 sequences / 647 characters                                                          
+
+
+Now to get the meta names straight.   
+
+Now a phylip!
+
+Sorting names...    
+```{sh, eval=FALSE}
+white-fish-phylogeny mac$ cut -f 1,2,3,5,6,7 -d '_' 3.afas | perl -pe 's/_isolate//g' | perl -pe 's/_$//g' | perl -pe 's/_voucher//g' | perl -pe 's/_haplotype//g' | perl -pe 's/_mitoc.*//g' | perl -pe 's/_strain//g' | cut -f 1,4,5 -d '_' > names.txt
+
+cat 3.afas | perl -pe 's/ +/\t/g' | cut -f 2 > seqs.txt
+
+paste names.txt seqs.txt > 4.phylip
+```
+
+Refseq names funny, fixing...    
+Make tree with model testing. Now 625 seqs as three were funny.     
+
+```{sh, eval=FALSE}
+iqtree -s 5_new.phylip -st DNA -m MFP -bb 1000 -alrt 1000 --redo
+```
+
+```{r}
+library(tidyverse)
+library(ggtree)
+library(ape)
+library(ggpubr)
+library(gridExtra)
+library(phangorn)
+library(viridis)
+library(grid)
+```
+
+
+```{r}
+ml<-read.tree("tree-files/5_new.phylip.contree")
+t2<-as.polytomy(ml, feature='node.label', fun=function(x) as.numeric(x) < 75)
+
+ggtree(t2)+geom_nodelab(aes(label=node))
+```
+
+```{r}
+t3<-root(t2, node=634 )
+tt2<-ggtree(t3)  
+
+tt2 + geom_tiplab()
+
+```
+
+```{r, eval=FALSE}
+meta<-tt2$data %>% filter(isTip==TRUE) %>% select(label) %>% separate(label, into=c("Accession","Genus","Species"),remove=FALSE) %>%
+  rename(name=label) %>%
+  mutate(Taxon = ifelse(Species %in% c("lavaretus", "clupeaformis", "pidschian",
+                                       "nelsonii","muksun"), "Lake Whitefish Complex",
+                 ifelse(Species %in% c("sardinella", "albula","peled","subautumnalis"), "Least Cisco Complex",
+                 ifelse(Species %in% c("coulterii"), "Pygmy Whitefish",
+                 ifelse(Species %in% c("cylindraceum"),"Round Whitefish", 
+                 ifelse(Species %in% c("leucichthys"), "Inconnu", 
+                 ifelse(Species %in% c("nasus"), "Broad Whitefish",
+                 ifelse(Species %in% c("autumnalis"), "Arctic Cisco",
+                 ifelse(Species %in% c("laurettae"), "Bering Cisco","Other")))))))))
+
+meta$Taxon<-factor(meta$Taxon, levels=c("Arctic Cisco","Bering Cisco","Broad Whitefish","Inconnu", "Lake Whitefish Complex", 
+                                        "Least Cisco Complex","Pygmy Whitefish", "Round Whitefish", "Other"))
+meta<-meta %>% mutate(GenusSpecies=paste0(Genus," ",Species, " ", Accession))
+u<- tt2  %<+% meta 
+```
+
+```{r}
+cols<-viridis(n=length(unique(meta$Taxon)), option="H")
+```
+
+```{r}
+
+d <-u$data
+d <- d[!d$isTip,]
+d$label <- as.numeric(d$label)
+d <- d[d$label >= 90,]
+
+e <- u$data
+e <- e[!e$isTip,]
+e$label <- as.numeric(e$label)
+e <- e[e$label < 90,]
+e <- e[e$label >= 75,]
+
+```
+
+
+```{r}
+u +
+  geom_point(data=e,  color="gray50", cex=3, alpha=0.75) +
+  geom_point(data=d,  color="black", cex=3, alpha=0.75) +
+  geom_tiplab(aes(label=GenusSpecies), fontface="italic", align = TRUE, size=1.5, linetype="solid",    linesize = 0.1, offset = 0.01) +
+  geom_tippoint(aes(fill=Taxon, x=x+0.001),  pch=22, alpha=0.9) +
+  scale_fill_manual(values=cols) +
+  geom_treescale() +
+  xlim(0,.17)
+
+ggsave("Supplemental Figure S1.pdf", width=12, height=32)
+```
+

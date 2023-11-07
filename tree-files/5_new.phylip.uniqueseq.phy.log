@@ -1,0 +1,474 @@
+IQ-TREE multicore version 2.0-rc1 for Mac OS X 64-bit built Nov 21 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    Macs-MBP-2 (AVX, 16 GB RAM)
+Command: iqtree -s 5_new.phylip.uniqueseq.phy -st DNA -m MFP -bb 1000 -alrt 1000 --redo
+Seed:    218969 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Fri Nov 19 16:11:19 2021
+Kernel:  AVX - 1 threads (4 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 4 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file 5_new.phylip.uniqueseq.phy ... Phylip format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 211 sequences with 647 columns, 236 distinct patterns
+136 parsimony-informative, 28 singleton sites, 483 constant sites
+                                   Gap/Ambiguity  Composition  p-value
+   1  AB034824_Coregonus_lavaretus         0.00%    passed     98.70%
+   2  AP013050_Prosopium_cylindraceum      0.00%    passed     84.45%
+   3  EU202649_Coregonus_autumnalis        0.00%    passed     99.68%
+   4  EU202650_Coregonus_laurettae         0.00%    passed     96.55%
+   5  EU202651_Coregonus_pidschian         0.00%    passed     98.83%
+   6  EU202652_Coregonus_nasus             0.00%    passed     99.62%
+   7  EU202653_Coregonus_sardinella        0.00%    passed     98.65%
+   8  EU202654_Prosopium_coulterii         0.00%    passed     58.08%
+   9  EU202655_Prosopium_coulterii         0.00%    passed     48.58%
+  10  EU202656_Prosopium_cylindraceum      0.00%    passed     67.21%
+  11  EU202657_Prosopium_cylindraceum      0.00%    passed     79.49%
+  12  EU202658_Stenodus_leucichthys        0.00%    passed     95.80%
+  13  EU427541_Coregonus_pidschian         0.00%    passed     96.05%
+  14  EU522426_Stenodus_leucichthys        0.00%    passed     94.15%
+  15  EU522427_Stenodus_leucichthys        0.15%    passed     94.90%
+  16  EU522428_Stenodus_leucichthys        0.00%    passed     95.80%
+  17  EU522438_Prosopium_williamsoni       0.00%    passed     95.57%
+  18  EU523939_Coregonus_artedi            0.00%    passed     94.33%
+  19  EU523942_Coregonus_artedi            0.00%    passed     96.55%
+  20  EU523946_Coregonus_autumnalis        0.00%    passed     99.68%
+  21  EU523948_Coregonus_autumnalis        0.00%    passed     99.13%
+  22  EU523952_Coregonus_clupeaformis      0.00%    passed     96.05%
+  23  EU523955_Coregonus_clupeaformis      0.00%    passed     93.12%
+  24  EU523956_Coregonus_clupeaformis      0.00%    passed     96.05%
+  25  EU523957_Coregonus_clupeaformis      0.00%    passed     99.27%
+  26  EU523958_Coregonus_clupeaformis      0.00%    passed     98.08%
+  27  EU523961_Coregonus_hoyi              0.00%    passed     94.58%
+  28  EU523963_Coregonus_hoyi              0.00%    passed     96.55%
+  29  EU523966_Coregonus_laurettae         0.00%    passed     96.55%
+  30  EU523967_Coregonus_laurettae         0.00%    passed     98.13%
+  31  EU523970_Coregonus_laurettae         0.00%    passed     95.56%
+  32  EU523971_Coregonus_laurettae         0.00%    passed     96.78%
+  33  EU523973_Coregonus_nasus             0.00%    passed     99.62%
+  34  EU523976_Coregonus_nasus             0.15%    passed     99.46%
+  35  EU523979_Coregonus_nasus             0.00%    passed     99.97%
+  36  EU523981_Coregonus_nigripinnis       0.00%    passed     93.01%
+  37  EU523982_Coregonus_sardinella        0.00%    passed     98.65%
+  38  EU523983_Coregonus_sardinella        0.00%    passed     99.96%
+  39  EU523987_Coregonus_sardinella        0.00%    passed     97.32%
+  40  EU524288_Prosopium_cylindraceum      0.00%    passed     79.49%
+  41  EU524289_Prosopium_cylindraceum      0.00%    passed     82.96%
+  42  EU524294_Prosopium_cylindraceum      0.00%    passed     84.45%
+  43  EU524301_Prosopium_williamsoni       0.00%    passed     91.68%
+  44  EU524303_Prosopium_williamsoni       0.00%    passed     93.91%
+  45  EU524304_Prosopium_williamsoni       0.00%    passed     92.30%
+  46  EU524489_Coregonus_huntsmani         0.00%    passed     99.52%
+  47  EU525103_Prosopium_coulterii         0.00%    passed     48.58%
+  48  EU525104_Prosopium_coulterii         0.00%    passed     58.08%
+  49  FJ918926_Prosopium_williamsoni       4.17%    passed     96.69%
+  50  HM902202_Salmoniformes_sp            0.00%    passed     98.83%
+  51  HQ557337_Prosopium_williamsoni       0.00%    passed     93.54%
+  52  HQ960631_Coregonus_maraena           0.00%    passed     98.12%
+  53  HQ960661_Coregonus_peled             0.00%    passed     97.32%
+  54  HQ960662_Coregonus_peled             0.00%    passed     98.26%
+  55  JQ390058_Coregonus_nasus             0.00%    passed    100.00%
+  56  JQ390060_Coregonus_clupeaformis      0.00%    passed     99.27%
+  57  JQ390061_Prosopium_williamsoni       0.00%    passed     93.91%
+  58  JQ390062_Prosopium_cylindraceum      0.00%    passed     83.38%
+  59  JQ661400_Coregonus_oxyrinchus        0.00%    passed     99.66%
+  60  JQ661403_Coregonus_oxyrinchus        0.00%    passed     99.19%
+  61  JQ661408_Coregonus_oxyrinchus        0.00%    passed     99.19%
+  62  JQ661410_Coregonus_oxyrinchus        0.00%    passed     99.66%
+  63  JQ661482_Coregonus_clupeaformis      0.00%    passed     98.08%
+  64  JX960876_Coregonus_albula            0.00%    passed     99.45%
+  65  JX960877_Coregonus_albula            2.32%    passed     86.62%
+  66  JX960878_Coregonus_artedi            0.00%    passed     96.55%
+  67  JX960879_Coregonus_artedi            0.00%    passed     94.33%
+  68  JX960885_Coregonus_hoyi              0.31%    passed     96.44%
+  69  JX960886_Coregonus_huntsmani         0.00%    passed     99.52%
+  70  JX960887_Coregonus_kiyi              0.00%    passed     91.42%
+  71  JX960888_Coregonus_laurettae         1.85%    passed     93.28%
+  72  JX960890_Coregonus_lavaretus         2.47%    passed     95.94%
+  73  JX960891_Coregonus_migratorius       1.08%    passed     98.50%
+  74  JX960901_Coregonus_tugun             0.15%    passed     99.95%
+  75  JX960902_Coregonus_ussuriensis       2.32%    passed     97.98%
+  76  JX960929_Prosopium_abyssicola        0.00%    passed     86.48%
+  77  JX960932_Prosopium_cylindraceum      0.00%    passed     67.21%
+  78  JX960934_Prosopium_gemmifer          0.00%    passed     89.61%
+  79  JX960935_Prosopium_gemmifer          0.00%    passed     89.61%
+  80  JX960936_Prosopium_spilonotus        0.00%    passed     86.48%
+  81  JX960938_Prosopium_williamsoni       0.00%    passed     96.11%
+  82  JX960939_Prosopium_williamsoni       0.00%    passed     95.57%
+  83  KC296706_Coregonus_sp                0.93%    passed     97.12%
+  84  KF536940_Prosopium_coulterii         3.55%    passed     70.66%
+  85  KF536943_Prosopium_coulterii         3.86%    passed     66.96%
+  86  KJ128461_Coregonus_albula            0.46%    passed     97.18%
+  87  KJ128463_Coregonus_albula            0.46%    passed     98.55%
+  88  KJ128465_Coregonus_maraena           0.46%    passed     97.98%
+  89  KM286533_Coregonus_albula            0.77%    passed     99.40%
+  90  KM286534_Coregonus_albula            0.77%    passed     98.79%
+  91  KM286535_Coregonus_albula            0.77%    passed     99.40%
+  92  KM286536_Coregonus_albula            0.00%    passed     99.45%
+  93  KM286537_Coregonus_albula            0.00%    passed     99.45%
+  94  KM286539_Coregonus_albula            0.00%    passed     97.63%
+  95  KM286540_Coregonus_albula            0.31%    passed     98.71%
+  96  KM286541_Coregonus_albula            0.31%    passed     98.71%
+  97  KM286543_Coregonus_albula            2.78%    passed     98.54%
+  98  KM286544_Coregonus_albula            0.00%    passed     99.45%
+  99  KM286547_Coregonus_albula            6.96%    passed     98.79%
+ 100  KM286550_Coregonus_albula            6.96%    passed     98.58%
+ 101  KM286559_Coregonus_albula            0.77%    passed     99.81%
+ 102  KM286560_Coregonus_albula            0.00%    passed     97.63%
+ 103  KM286570_Coregonus_albula            0.77%    passed     98.57%
+ 104  KM286575_Coregonus_albula            3.55%    passed     98.98%
+ 105  KM286579_Coregonus_albula            1.24%    passed     95.83%
+ 106  KM286580_Coregonus_albula            5.10%    passed     98.14%
+ 107  KM286581_Coregonus_albula            0.77%    passed     98.57%
+ 108  KM286582_Coregonus_albula            0.31%    passed     98.33%
+ 109  KM286583_Coregonus_albula            0.31%    passed     98.75%
+ 110  KM286586_Coregonus_albula            6.49%    passed     96.90%
+ 111  KM286587_Coregonus_albula            0.31%    passed     99.50%
+ 112  KM286588_Coregonus_albula            0.77%    passed     99.81%
+ 113  KM286591_Coregonus_albula            1.85%    passed     88.70%
+ 114  KM286592_Coregonus_albula            6.96%    passed     93.20%
+ 115  KM286593_Coregonus_albula            5.10%    passed     96.93%
+ 116  KM286600_Coregonus_holsatus          1.39%    passed     96.95%
+ 117  KM286608_Coregonus_lucinensis        2.63%    passed     99.52%
+ 118  KM286610_Coregonus_macrophthalmus    6.34%    passed     93.75%
+ 119  KP978026_Coregonus_artedi            0.00%    passed     98.13%
+ 120  KP978039_Coregonus_clupeaformis      0.00%    passed     98.70%
+ 121  KP978049_Coregonus_clupeaformis      0.46%    passed     97.84%
+ 122  KP978055_Coregonus_clupeaformis      0.00%    passed     98.06%
+ 123  KP978101_Coregonus_clupeaformis      0.00%    passed     96.07%
+ 124  KP978113_Coregonus_clupeaformis      0.00%    passed     96.07%
+ 125  KP978117_Coregonus_clupeaformis      0.00%    passed     96.07%
+ 126  KP978118_Coregonus_clupeaformis      0.00%    passed     98.06%
+ 127  KP978120_Coregonus_clupeaformis      0.00%    passed     98.06%
+ 128  KP978122_Coregonus_clupeaformis      0.00%    passed     96.07%
+ 129  KP978148_Coregonus_clupeaformis      0.00%    passed     97.09%
+ 130  KP978199_Coregonus_clupeaformis      2.63%    passed     96.81%
+ 131  KP978217_Prosopium_cylindraceum      0.00%    passed     73.17%
+ 132  KP978218_Prosopium_cylindraceum      0.00%    passed     85.42%
+ 133  KP978219_Prosopium_cylindraceum      0.00%    passed     85.42%
+ 134  KP978221_Prosopium_cylindraceum      0.00%    passed     73.17%
+ 135  KP978224_Prosopium_cylindraceum      0.00%    passed     84.45%
+ 136  KR477023_Coregonus_sp                6.49%    passed     98.56%
+ 137  KR477024_Coregonus_sp                6.49%    passed     98.56%
+ 138  KR477179_Coregonus_sp                6.65%    passed     98.19%
+ 139  KR477184_Coregonus_sp                6.96%    passed     96.50%
+ 140  KR733391_Coregonus_clupeaformis      4.95%    passed     96.14%
+ 141  KR733394_Coregonus_clupeaformis      0.00%    passed     97.77%
+ 142  KR733397_Coregonus_clupeaformis      0.00%    passed     94.29%
+ 143  KR733401_Coregonus_clupeaformis      0.15%    passed     98.67%
+ 144  KR733403_Coregonus_clupeaformis      4.95%    passed     96.14%
+ 145  KR733406_Coregonus_clupeaformis      5.41%    passed     96.92%
+ 146  KR733407_Coregonus_clupeaformis      0.31%    passed     95.77%
+ 147  KR733409_Coregonus_clupeaformis      0.15%    passed     98.16%
+ 148  KR733412_Coregonus_clupeaformis      0.00%    passed     96.07%
+ 149  KR733419_Coregonus_clupeaformis      5.56%    passed     97.84%
+ 150  KR733421_Coregonus_clupeaformis      4.79%    passed     96.44%
+ 151  KT583726_Coregonus_laurettae        16.23%    passed     79.67%
+ 152  KT583727_Coregonus_laurettae        16.23%    passed     79.67%
+ 153  KT630715_Stenodus_leucichthys        4.79%    passed     99.26%
+ 154  KT630716_Stenodus_leucichthys        4.79%    passed     99.26%
+ 155  KT630719_Coregonus_sardinella        4.17%    passed     86.13%
+ 156  KT630721_Coregonus_sardinella        4.17%    passed     90.02%
+ 157  KT630722_Coregonus_nasus             4.48%    passed     95.24%
+ 158  KT630724_Coregonus_nasus             4.48%    passed     95.24%
+ 159  KT630725_Coregonus_pidschian        14.84%    passed     91.31%
+ 160  KT630727_Prosopium_cylindraceum      8.66%    passed     78.00%
+ 161  KT630728_Prosopium_coulterii        32.46%    passed     62.17%
+ 162  KT630730_Prosopium_coulterii        32.46%    passed     62.17%
+ 163  KU258398_Coregonus_pidschian        14.37%    passed     90.93%
+ 164  KU258399_Coregonus_pidschian         3.55%    passed     96.33%
+ 165  KU258400_Coregonus_pidschian         3.55%    passed     96.33%
+ 166  KU258410_Prosopium_cylindraceum      8.66%    passed     77.02%
+ 167  KU258411_Prosopium_cylindraceum      8.66%    passed     82.60%
+ 168  KU867881_Coregonus_nasus            14.22%    passed     92.01%
+ 169  KU867882_Coregonus_nasus            14.22%    passed     90.64%
+ 170  KU867883_Coregonus_sardinella        4.17%    passed     90.62%
+ 171  KX145095_Coregonus_nigripinnis       0.00%    passed     96.55%
+ 172  KX145234_Coregonus_nigripinnis       0.00%    passed     96.78%
+ 173  KX145332_Prosopium_coulterii         0.00%    passed     55.09%
+ 174  KX457956_Coregonus_albula            3.40%    passed     84.11%
+ 175  KX457957_Coregonus_albula            1.85%    passed     92.13%
+ 176  KX457958_Coregonus_albula            0.00%    passed     99.42%
+ 177  KX457959_Coregonus_albula            0.00%    passed     98.26%
+ 178  KX958407_Coregonus_autumnalis       16.69%    passed     86.06%
+ 179  KX958408_Coregonus_autumnalis       16.69%    passed     86.06%
+ 180  MF632312_Coregonus_nasus             4.33%    passed     97.54%
+ 181  MF632313_Coregonus_nasus             4.33%    passed     95.95%
+ 182  MF632314_Coregonus_nasus             4.33%    passed     95.63%
+ 183  MF632315_Coregonus_nasus             4.33%    passed     98.93%
+ 184  MF632316_Coregonus_nasus             4.33%    passed     98.12%
+ 185  MF632317_Coregonus_migratorius       4.33%    passed     97.30%
+ 186  MF632318_Coregonus_migratorius       4.33%    passed     97.30%
+ 187  MF632319_Coregonus_migratorius       4.33%    passed     97.30%
+ 188  MF632320_Coregonus_migratorius       4.33%    passed     98.38%
+ 189  MF632321_Coregonus_peled             4.33%    passed     89.43%
+ 190  MF632322_Coregonus_peled             4.33%    passed     90.80%
+ 191  MF632323_Coregonus_nasus             4.33%    passed     92.45%
+ 192  MF632324_Coregonus_peled             4.33%    passed     90.47%
+ 193  MF632325_Coregonus_peled             4.33%    passed     87.64%
+ 194  MG951550_Prosopium_cylindraceum      0.00%    passed     82.96%
+ 195  MG951551_Prosopium_cylindraceum      0.00%    passed     80.95%
+ 196  MG951552_Coregonus_lavaretus         0.00%    passed     98.06%
+ 197  MH301055_Coregonus_artedi            0.00%    passed     91.70%
+ 198  MH807243_Coregonus_sardinella        5.56%    passed     88.29%
+ 199  MH807244_Coregonus_pidschian         5.56%    passed     97.84%
+ 200  MH807245_Coregonus_sardinella        5.56%    passed     88.29%
+ 201  MH807246_Coregonus_pidschian         5.56%    passed     98.24%
+ 202  MH807247_Coregonus_nasus             4.33%    passed     95.95%
+ 203  MH807251_Coregonus_sardinella        5.56%    passed     89.45%
+ 204  MN394785_Coregonus_baicalensis       0.00%    passed     99.81%
+ 205  MN394786_Coregonus_baicalensis       0.00%    passed     99.81%
+ 206  MN394788_Coregonus_migratorius       0.00%    passed     99.82%
+ 207  MN394789_Coregonus_migratorius       0.00%    passed     99.81%
+ 208  MT833787_Coregonus_albula            0.00%    passed     98.91%
+ 209  MT833789_Coregonus_albula            0.00%    passed     99.45%
+ 210  MT833790_Coregonus_albula            0.00%    passed     98.91%
+ 211  NC045227_Coregonus_migratorius       0.00%    passed     99.97%
+****  TOTAL                                2.35%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: EU524294_Prosopium_cylindraceum is identical to AP013050_Prosopium_cylindraceum but kept for subsequent analysis
+NOTE: EU523946_Coregonus_autumnalis is identical to EU202649_Coregonus_autumnalis but kept for subsequent analysis
+NOTE: EU523966_Coregonus_laurettae is identical to EU202650_Coregonus_laurettae but kept for subsequent analysis
+NOTE: HM902202_Salmoniformes_sp is identical to EU202651_Coregonus_pidschian but kept for subsequent analysis
+NOTE: EU523973_Coregonus_nasus is identical to EU202652_Coregonus_nasus but kept for subsequent analysis
+NOTE: EU523982_Coregonus_sardinella is identical to EU202653_Coregonus_sardinella but kept for subsequent analysis
+NOTE: EU525104_Prosopium_coulterii is identical to EU202654_Prosopium_coulterii but kept for subsequent analysis
+NOTE: EU525103_Prosopium_coulterii is identical to EU202655_Prosopium_coulterii but kept for subsequent analysis
+NOTE: JX960932_Prosopium_cylindraceum is identical to EU202656_Prosopium_cylindraceum but kept for subsequent analysis
+NOTE: EU524288_Prosopium_cylindraceum is identical to EU202657_Prosopium_cylindraceum but kept for subsequent analysis
+NOTE: EU522428_Stenodus_leucichthys is identical to EU202658_Stenodus_leucichthys but kept for subsequent analysis
+NOTE: EU523956_Coregonus_clupeaformis is identical to EU427541_Coregonus_pidschian but kept for subsequent analysis
+NOTE: JX960939_Prosopium_williamsoni is identical to EU522438_Prosopium_williamsoni but kept for subsequent analysis
+NOTE: JX960879_Coregonus_artedi is identical to EU523939_Coregonus_artedi but kept for subsequent analysis
+NOTE: JX960878_Coregonus_artedi is identical to EU523942_Coregonus_artedi but kept for subsequent analysis
+NOTE: JQ661482_Coregonus_clupeaformis is identical to EU523958_Coregonus_clupeaformis but kept for subsequent analysis
+NOTE: JQ390061_Prosopium_williamsoni is identical to EU524303_Prosopium_williamsoni but kept for subsequent analysis
+NOTE: JX960886_Coregonus_huntsmani is identical to EU524489_Coregonus_huntsmani but kept for subsequent analysis
+NOTE: JQ661410_Coregonus_oxyrinchus is identical to JQ661400_Coregonus_oxyrinchus but kept for subsequent analysis
+NOTE: JQ661408_Coregonus_oxyrinchus is identical to JQ661403_Coregonus_oxyrinchus but kept for subsequent analysis
+NOTE: JX960935_Prosopium_gemmifer is identical to JX960934_Prosopium_gemmifer but kept for subsequent analysis
+NOTE: KM286535_Coregonus_albula is identical to KM286533_Coregonus_albula but kept for subsequent analysis
+NOTE: KM286537_Coregonus_albula is identical to KM286536_Coregonus_albula but kept for subsequent analysis
+NOTE: KM286541_Coregonus_albula is identical to KM286540_Coregonus_albula but kept for subsequent analysis
+NOTE: KP978122_Coregonus_clupeaformis is identical to KP978101_Coregonus_clupeaformis but kept for subsequent analysis
+NOTE: KP978120_Coregonus_clupeaformis is identical to KP978118_Coregonus_clupeaformis but kept for subsequent analysis
+NOTE: KP978221_Prosopium_cylindraceum is identical to KP978217_Prosopium_cylindraceum but kept for subsequent analysis
+NOTE: KP978219_Prosopium_cylindraceum is identical to KP978218_Prosopium_cylindraceum but kept for subsequent analysis
+NOTE: KR477024_Coregonus_sp is identical to KR477023_Coregonus_sp but kept for subsequent analysis
+NOTE: KR733403_Coregonus_clupeaformis is identical to KR733391_Coregonus_clupeaformis but kept for subsequent analysis
+NOTE: MH807244_Coregonus_pidschian is identical to KR733419_Coregonus_clupeaformis but kept for subsequent analysis
+NOTE: KT583727_Coregonus_laurettae is identical to KT583726_Coregonus_laurettae but kept for subsequent analysis
+NOTE: KT630716_Stenodus_leucichthys is identical to KT630715_Stenodus_leucichthys but kept for subsequent analysis
+NOTE: KT630724_Coregonus_nasus is identical to KT630722_Coregonus_nasus but kept for subsequent analysis
+NOTE: KT630730_Prosopium_coulterii is identical to KT630728_Prosopium_coulterii but kept for subsequent analysis
+NOTE: KU258400_Coregonus_pidschian is identical to KU258399_Coregonus_pidschian but kept for subsequent analysis
+NOTE: KX958408_Coregonus_autumnalis is identical to KX958407_Coregonus_autumnalis but kept for subsequent analysis
+NOTE: MH807247_Coregonus_nasus is identical to MF632313_Coregonus_nasus but kept for subsequent analysis
+NOTE: MF632319_Coregonus_migratorius is identical to MF632317_Coregonus_migratorius but kept for subsequent analysis
+NOTE: MH807245_Coregonus_sardinella is identical to MH807243_Coregonus_sardinella but kept for subsequent analysis
+NOTE: MN394786_Coregonus_baicalensis is identical to MN394785_Coregonus_baicalensis but kept for subsequent analysis
+NOTE: MT833790_Coregonus_albula is identical to MT833787_Coregonus_albula but kept for subsequent analysis
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.020 seconds
+Perform fast likelihood tree search using GTR+I+G model...
+Estimate model parameters (epsilon = 5.000)
+Perform nearest neighbor interchange...
+Estimate model parameters (epsilon = 1.000)
+1. Initial log-likelihood: -2756.769
+Optimal log-likelihood: -2756.678
+Rate parameters:  A-C: 2.23046  A-G: 19.14361  A-T: 0.31030  C-G: 1.25460  C-T: 8.98323  G-T: 1.00000
+Base frequencies:  A: 0.218  C: 0.294  G: 0.196  T: 0.292
+Proportion of invariable sites: 0.373
+Gamma shape alpha: 0.404
+Parameters optimization took 1 rounds (0.288 sec)
+Time for fast ML tree search: 1.994 seconds
+
+NOTE: ModelFinder requires 17 MB RAM!
+ModelFinder will test up to 286 DNA models (sample size: 647) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  GTR+F         2893.059     427 6640.118     8309.123     8549.810
+  2  GTR+F+I       2766.480     428 6388.959     8073.473     8303.123
+  3  GTR+F+G4      2760.564     428 6377.128     8061.642     8291.292
+  4  GTR+F+I+G4    2756.661     429 6371.322     8071.506     8289.958
+  5  GTR+F+R2      2757.409     429 6372.818     8073.003     8291.455
+  6  GTR+F+R3      2756.992     431 6375.983     8108.002     8303.565
+ 16  SYM+G4        2769.424     425 6388.849     8027.310     8289.596
+ 17  SYM+I+G4      2765.413     426 6382.826     8036.480     8288.045
+ 18  SYM+R2        2765.746     426 6383.493     8037.147     8288.712
+ 29  TVM+F+G4      2770.624     427 6395.248     8064.253     8304.940
+ 30  TVM+F+I+G4    2765.467     428 6386.933     8071.447     8301.097
+ 31  TVM+F+R2      2765.095     428 6386.191     8070.704     8300.355
+ 42  TVMe+G4       2771.710     424 6391.419     8014.843     8287.694
+ 43  TVMe+I+G4     2767.127     425 6384.254     8022.716     8285.001
+ 44  TVMe+R2       2766.965     425 6383.931     8022.392     8284.678
+ 55  TIM3+F+G4     2762.886     426 6377.773     8031.427     8282.992
+ 56  TIM3+F+I+G4   2759.152     427 6372.304     8041.309     8281.996
+ 57  TIM3+F+R2     2759.622     427 6373.244     8042.248     8282.936
+ 68  TIM3e+G4      2771.988     423 6389.975     7998.514     8281.778
+ 69  TIM3e+I+G4    2768.144     424 6384.288     8007.711     8280.562
+ 70  TIM3e+R2      2768.354     424 6384.708     8008.131     8280.983
+ 81  TIM2+F+G4     2767.854     426 6387.708     8041.363     8292.928
+ 82  TIM2+F+I+G4   2763.935     427 6381.869     8050.874     8291.561
+ 83  TIM2+F+R2     2764.253     427 6382.506     8051.511     8292.198
+ 94  TIM2e+G4      2776.633     423 6399.265     8007.803     8291.068
+ 95  TIM2e+I+G4    2772.611     424 6393.222     8016.645     8289.497
+ 96  TIM2e+R2      2772.644     424 6393.289     8016.712     8289.563
+107  TIM+F+G4      2765.535     426 6383.069     8036.724     8288.289
+108  TIM+F+I+G4    2761.419     427 6376.839     8045.843     8286.531
+109  TIM+F+R2      2761.845     427 6377.689     8046.694     8287.381
+120  TIMe+G4       2774.527     423 6395.053     8003.591     8286.856
+121  TIMe+I+G4     2770.287     424 6388.574     8011.997     8284.849
+122  TIMe+R2       2770.391     424 6388.781     8012.205     8285.056
+133  TPM3u+F+G4    2773.073     425 6396.145     8034.607     8296.893
+134  TPM3u+F+I+G4  2768.122     426 6388.243     8041.898     8293.463
+135  TPM3u+F+R2    2767.671     426 6387.342     8040.997     8292.562
+146  TPM3+F+G4     2773.073     425 6396.145     8034.607     8296.893
+147  TPM3+F+I+G4   2768.122     426 6388.243     8041.898     8293.463
+148  TPM3+F+R2     2767.671     426 6387.342     8040.997     8292.562
+159  TPM2u+F+G4    2777.969     425 6405.938     8044.400     8306.685
+160  TPM2u+F+I+G4  2772.843     426 6397.685     8051.340     8302.905
+161  TPM2u+F+R2    2772.109     426 6396.218     8049.872     8301.437
+172  TPM2+F+G4     2777.969     425 6405.938     8044.400     8306.685
+173  TPM2+F+I+G4   2772.843     426 6397.685     8051.340     8302.905
+174  TPM2+F+R2     2772.109     426 6396.218     8049.872     8301.437
+185  K3Pu+F+G4     2775.684     425 6401.368     8039.830     8302.115
+186  K3Pu+F+I+G4   2770.318     426 6392.636     8046.291     8297.856
+187  K3Pu+F+R2     2769.638     426 6391.275     8044.930     8296.495
+198  K3P+G4        2776.836     422 6397.672     7991.476     8285.002
+199  K3P+I+G4      2772.024     423 6390.048     7998.587     8281.851
+200  K3P+R2        2771.581     423 6389.162     7997.700     8280.964
+211  TN+F+G4       2767.956     425 6385.912     8024.374     8286.659
+212  TN+F+I+G4     2764.022     426 6380.043     8033.698     8285.263
+213  TN+F+R2       2764.349     426 6380.697     8034.352     8285.917
+224  TNe+G4        2776.960     422 6397.920     7991.724     8285.250
+225  TNe+I+G4      2772.924     423 6391.849     8000.387     8283.651
+226  TNe+R2        2772.936     423 6391.872     8000.411     8283.675
+237  HKY+F+G4      2778.104     424 6404.208     8027.632     8300.483
+238  HKY+F+I+G4    2772.979     425 6395.958     8034.419     8296.705
+239  HKY+F+R2      2772.245     425 6394.490     8032.952     8295.237
+250  K2P+G4        2779.272     421 6400.544     7979.762     8283.402
+251  K2P+I+G4      2774.692     422 6393.383     7987.187     8280.713
+252  K2P+R2        2774.173     422 6392.346     7986.149     8279.676
+263  F81+F+G4      2934.062     423 6714.124     8322.662     8605.926
+264  F81+F+I+G4    2930.948     424 6709.896     8333.320     8606.171
+265  F81+F+R2      2930.419     424 6708.838     8332.262     8605.113
+276  JC+G4         2944.878     420 6729.755     8294.534     8608.141
+277  JC+I+G4       2941.463     421 6724.926     8304.143     8607.783
+278  JC+R2         2940.788     421 6723.575     8302.793     8606.433
+Akaike Information Criterion:           GTR+F+I+G4
+Corrected Akaike Information Criterion: K2P+G4
+Bayesian Information Criterion:         K2P+R2
+Best-fit model: K2P+R2 chosen according to BIC
+
+All model information printed to 5_new.phylip.uniqueseq.phy.model.gz
+CPU time for ModelFinder: 21.290 seconds (0h:0m:21s)
+Wall-clock time for ModelFinder: 22.595 seconds (0h:0m:22s)
+Generating 1000 samples for ultrafast bootstrap (seed: 218969)...
+
+NOTE: 4 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -2774.173
+Optimal log-likelihood: -2774.140
+Rate parameters:  A-C: 1.00000  A-G: 10.57915  A-T: 1.00000  C-G: 1.00000  C-T: 10.57915  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Site proportion and rates:  (0.847,0.241) (0.153,5.204)
+Parameters optimization took 1 rounds (0.113 sec)
+Computing ML distances based on estimated model parameters... 0.615 sec
+Computing BIONJ tree...
+0.044 seconds
+Log-likelihood of BIONJ tree: -2800.694
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 1.828 second
+Computing log-likelihood of 98 initial trees ... 1.480 seconds
+Current best score: -2774.140
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -2774.115
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -2773.682
+Iteration 10 / LogL: -2775.299 / Time: 0h:0m:17s
+Iteration 20 / LogL: -2775.157 / Time: 0h:0m:32s
+Finish initializing candidate tree set (20)
+Current best tree score: -2773.682 / CPU time: 31.737
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -2773.700 / Time: 0h:0m:45s (0h:1m:52s left)
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 36: -2773.616
+Iteration 40 / LogL: -2773.695 / Time: 0h:0m:58s (0h:2m:22s left)
+Iteration 50 / LogL: -2774.250 / Time: 0h:1m:13s (0h:2m:9s left)
+Log-likelihood cutoff on original alignment: -2802.111
+Iteration 60 / LogL: -2777.004 / Time: 0h:1m:32s (0h:1m:58s left)
+Iteration 70 / LogL: -2773.646 / Time: 0h:1m:47s (0h:1m:43s left)
+Iteration 80 / LogL: -2775.282 / Time: 0h:2m:1s (0h:1m:26s left)
+Iteration 90 / LogL: -2773.637 / Time: 0h:2m:15s (0h:1m:10s left)
+Iteration 100 / LogL: -2779.669 / Time: 0h:2m:27s (0h:0m:53s left)
+Log-likelihood cutoff on original alignment: -2802.111
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.975
+NOTE: UFBoot does not converge, continue at least 100 more iterations
+Iteration 110 / LogL: -2773.650 / Time: 0h:2m:42s (0h:2m:14s left)
+Iteration 120 / LogL: -2773.642 / Time: 0h:2m:56s (0h:1m:58s left)
+Iteration 130 / LogL: -2778.250 / Time: 0h:3m:10s (0h:1m:43s left)
+Iteration 140 / LogL: -2783.449 / Time: 0h:3m:25s (0h:1m:28s left)
+Iteration 150 / LogL: -2779.662 / Time: 0h:3m:39s (0h:1m:13s left)
+Log-likelihood cutoff on original alignment: -2802.111
+Iteration 160 / LogL: -2773.627 / Time: 0h:3m:53s (0h:0m:58s left)
+Iteration 170 / LogL: -2773.631 / Time: 0h:4m:14s (0h:0m:45s left)
+Iteration 180 / LogL: -2773.632 / Time: 0h:4m:28s (0h:0m:29s left)
+Iteration 190 / LogL: -2779.723 / Time: 0h:4m:46s (0h:0m:15s left)
+Iteration 200 / LogL: -2774.245 / Time: 0h:5m:3s (0h:0m:0s left)
+Log-likelihood cutoff on original alignment: -2802.932
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.993
+TREE SEARCH COMPLETED AFTER 200 ITERATIONS / Time: 0h:5m:5s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -2773.616
+Optimal log-likelihood: -2773.608
+Rate parameters:  A-C: 1.00000  A-G: 10.54663  A-T: 1.00000  C-G: 1.00000  C-T: 10.54663  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Site proportion and rates:  (0.842,0.230) (0.158,5.115)
+Parameters optimization took 1 rounds (0.139 sec)
+BEST SCORE FOUND : -2773.608
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+3.257 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file 5_new.phylip.uniqueseq.phy.splits.nex
+Total tree length: 0.598
+
+Total number of iterations: 200
+CPU time used for tree search: 276.442 sec (0h:4m:36s)
+Wall-clock time used for tree search: 304.781 sec (0h:5m:4s)
+Total CPU time used: 281.401 sec (0h:4m:41s)
+Total wall-clock time used: 310.909 sec (0h:5m:10s)
+
+Computing bootstrap consensus tree...
+Reading input file 5_new.phylip.uniqueseq.phy.splits.nex...
+211 taxa and 5963 splits.
+Consensus tree written to 5_new.phylip.uniqueseq.phy.contree
+Reading input trees file 5_new.phylip.uniqueseq.phy.contree
+Log-likelihood of consensus tree: -2773.910
+
+Analysis results written to: 
+  IQ-TREE report:                5_new.phylip.uniqueseq.phy.iqtree
+  Maximum-likelihood tree:       5_new.phylip.uniqueseq.phy.treefile
+  Likelihood distances:          5_new.phylip.uniqueseq.phy.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          5_new.phylip.uniqueseq.phy.splits.nex
+  Consensus tree:                5_new.phylip.uniqueseq.phy.contree
+  Screen log file:               5_new.phylip.uniqueseq.phy.log
+
+Date and Time: Fri Nov 19 16:16:53 2021

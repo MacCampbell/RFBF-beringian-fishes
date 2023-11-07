@@ -1,0 +1,1044 @@
+IQ-TREE 2.0-rc1 built Nov 21 2019
+
+Input file name: 5_new.phylip.uniqueseq.phy
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 218969
+
+REFERENCES
+----------
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2017) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol Biol Evol, in press.
+https://doi.org/10.1093/molbev/msx281
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 211 sequences with 647 nucleotide sites
+Number of constant sites: 483 (= 74.6522% of all sites)
+Number of invariant (constant or ambiguous constant) sites: 483 (= 74.6522% of all sites)
+Number of parsimony informative sites: 136
+Number of distinct site patterns: 236
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: K2P+R2
+
+List of models sorted by BIC scores: 
+
+Model                  LogL         AIC      w-AIC        AICc     w-AICc         BIC      w-BIC
+K2P+R2            -2774.173    6392.346 - 9.67e-06    7986.149 -   0.0383    8279.676 +    0.171
+TIM3e+I+G4        -2768.144    6384.288 - 0.000544    8007.711 - 7.96e-07    8280.562 +     0.11
+K2P+I+G4          -2774.692    6393.383 - 5.76e-06    7987.187 -   0.0228    8280.713 +    0.102
+K3P+R2            -2771.581    6389.162 - 4.75e-05    7997.700 - 0.000119    8280.964 +   0.0898
+TIM3e+R2          -2768.354    6384.708 - 0.000441    8008.131 - 6.45e-07    8280.983 +    0.089
+TIM3e+G4          -2771.988    6389.975 - 3.16e-05    7998.514 - 7.91e-05    8281.778 +   0.0598
+K3P+I+G4          -2772.024    6390.048 - 3.05e-05    7998.587 - 7.63e-05    8281.851 +   0.0576
+TIM3+F+I+G4       -2759.152    6372.304 +    0.217    8041.309 - 4.03e-14    8281.996 +   0.0536
+TIM3+F+R2         -2759.622    6373.244 +    0.136    8042.248 - 2.52e-14    8282.936 -   0.0335
+TIM3+F+G4         -2762.886    6377.773 -   0.0141    8031.427 - 5.64e-12    8282.992 -   0.0326
+K2P+G4            -2779.272    6400.544 -  1.6e-07    7979.762 +    0.934    8283.402 -   0.0265
+TNe+I+G4          -2772.924    6391.849 - 1.24e-05    8000.387 -  3.1e-05    8283.651 -   0.0234
+TNe+R2            -2772.936    6391.872 - 1.23e-05    8000.411 - 3.06e-05    8283.675 -   0.0232
+TVMe+R2           -2766.965    6383.931 -  0.00065    8022.392 - 5.16e-10    8284.678 -    0.014
+TIMe+I+G4         -2770.287    6388.574 - 6.37e-05    8011.997 - 9.34e-08    8284.849 -   0.0129
+TVMe+I+G4         -2767.127    6384.254 - 0.000553    8022.716 - 4.39e-10    8285.001 -   0.0119
+K3P+G4            -2776.836    6397.672 - 6.74e-07    7991.476 -  0.00267    8285.002 -   0.0119
+TIMe+R2           -2770.391    6388.781 - 5.75e-05    8012.205 - 8.42e-08    8285.056 -   0.0116
+TNe+G4            -2776.960    6397.920 - 5.96e-07    7991.724 -  0.00236    8285.250 -   0.0105
+TN+F+I+G4         -2764.022    6380.043 -  0.00454    8033.698 - 1.81e-12    8285.263 -   0.0105
+TN+F+R2           -2764.349    6380.697 -  0.00327    8034.352 - 1.31e-12    8285.917 -  0.00755
+TIM+F+I+G4        -2761.419    6376.839 -   0.0225    8045.843 - 4.18e-15    8286.531 -  0.00555
+TN+F+G4           -2767.956    6385.912 - 0.000241    8024.374 - 1.92e-10    8286.659 -  0.00521
+TIMe+G4           -2774.527    6395.053 -  2.5e-06    8003.591 - 6.25e-06    8286.856 -  0.00472
+TIM+F+R2          -2761.845    6377.689 -   0.0147    8046.694 - 2.73e-15    8287.381 -  0.00363
+TVMe+G4           -2771.710    6391.419 - 1.54e-05    8014.843 - 2.25e-08    8287.694 -   0.0031
+SYM+I+G4          -2765.413    6382.826 -  0.00113    8036.480 - 4.51e-13    8288.045 -   0.0026
+TIM+F+G4          -2765.535    6383.069 -    0.001    8036.724 - 3.99e-13    8288.289 -  0.00231
+SYM+R2            -2765.746    6383.493 - 0.000809    8037.147 - 3.23e-13    8288.712 -  0.00187
+TIM2e+I+G4        -2772.611    6393.222 - 6.24e-06    8016.645 - 9.14e-09    8289.497 -  0.00126
+TIM2e+R2          -2772.644    6393.289 - 6.03e-06    8016.712 - 8.84e-09    8289.563 -  0.00122
+SYM+G4            -2769.424    6388.849 - 5.56e-05    8027.310 - 4.42e-11    8289.596 -   0.0012
+GTR+F+I+G4        -2756.661    6371.322 +    0.355    8071.506 - 1.12e-20    8289.958 -    0.001
+TIM2e+G4          -2776.633    6399.265 - 3.04e-07    8007.803 -  7.6e-07    8291.068 - 0.000575
+GTR+F+G4          -2760.564    6377.128 -   0.0195    8061.642 - 1.55e-18    8291.292 - 0.000514
+GTR+F+R2          -2757.409    6372.818 +    0.168    8073.003 - 5.29e-21    8291.455 - 0.000473
+TIM2+F+I+G4       -2763.935    6381.869 -  0.00182    8050.874 - 3.38e-16    8291.561 - 0.000449
+TIM2+F+R2         -2764.253    6382.506 -  0.00132    8051.511 - 2.45e-16    8292.198 - 0.000327
+TPM3u+F+R2        -2767.671    6387.342 - 0.000118    8040.997 - 4.71e-14    8292.562 - 0.000272
+TPM3+F+R2         -2767.671    6387.342 - 0.000118    8040.997 - 4.71e-14    8292.562 - 0.000272
+TIM2+F+G4         -2767.854    6387.708 - 9.83e-05    8041.363 - 3.92e-14    8292.928 - 0.000227
+TPM3+F+I+G4       -2768.122    6388.243 - 7.52e-05    8041.898 -    3e-14    8293.463 - 0.000174
+TPM3u+F+I+G4      -2768.122    6388.243 - 7.52e-05    8041.898 -    3e-14    8293.463 - 0.000174
+HKY+F+R2          -2772.245    6394.490 - 3.31e-06    8032.952 - 2.63e-12    8295.237 - 7.14e-05
+K3Pu+F+R2         -2769.638    6391.275 - 1.65e-05    8044.930 - 6.59e-15    8296.495 - 3.81e-05
+HKY+F+I+G4        -2772.979    6395.958 - 1.59e-06    8034.419 - 1.26e-12    8296.705 - 3.43e-05
+TPM3u+F+G4        -2773.073    6396.145 - 1.45e-06    8034.607 - 1.15e-12    8296.893 - 3.12e-05
+TPM3+F+G4         -2773.073    6396.145 - 1.45e-06    8034.607 - 1.15e-12    8296.893 - 3.12e-05
+K3Pu+F+I+G4       -2770.318    6392.636 - 8.36e-06    8046.291 - 3.34e-15    8297.856 - 1.93e-05
+TVM+F+R2          -2765.095    6386.191 -  0.00021    8070.704 - 1.67e-20    8300.355 - 5.53e-06
+HKY+F+G4          -2778.104    6404.208 - 2.57e-08    8027.632 - 3.76e-11    8300.483 - 5.19e-06
+TVM+F+I+G4        -2765.467    6386.933 - 0.000145    8071.447 - 1.15e-20    8301.097 - 3.81e-06
+TPM2u+F+R2        -2772.109    6396.218 -  1.4e-06    8049.872 - 5.57e-16    8301.437 - 3.22e-06
+TPM2+F+R2         -2772.109    6396.218 -  1.4e-06    8049.872 - 5.57e-16    8301.437 - 3.22e-06
+K3Pu+F+G4         -2775.684    6401.368 - 1.06e-07    8039.830 - 8.44e-14    8302.115 - 2.29e-06
+TPM2u+F+I+G4      -2772.843    6397.685 -  6.7e-07    8051.340 - 2.67e-16    8302.905 - 1.54e-06
+TPM2+F+I+G4       -2772.843    6397.685 -  6.7e-07    8051.340 - 2.67e-16    8302.905 - 1.54e-06
+GTR+F+I           -2766.480    6388.959 - 5.26e-05    8073.473 - 4.18e-21    8303.123 - 1.39e-06
+GTR+F+R3          -2756.992    6375.983 -   0.0345    8108.002 - 1.33e-28    8303.565 - 1.11e-06
+TVM+F+G4          -2770.624    6395.248 - 2.27e-06    8064.253 -  4.2e-19    8304.940 - 5.58e-07
+TPM2u+F+G4        -2777.969    6405.938 - 1.08e-08    8044.400 - 8.59e-15    8306.685 - 2.33e-07
+TPM2+F+G4         -2777.969    6405.938 - 1.08e-08    8044.400 - 8.59e-15    8306.685 - 2.33e-07
+GTR+F             -2893.059    6640.118 - 1.52e-59    8309.123 - 2.82e-72    8549.810 - 3.75e-60
+F81+F+R2          -2930.419    6708.838 - 1.82e-74    8332.262 - 2.66e-77    8605.113 - 3.67e-72
+F81+F+G4          -2934.062    6714.124 - 1.29e-75    8322.662 - 3.24e-75    8605.926 - 2.45e-72
+F81+F+I+G4        -2930.948    6709.896 - 1.07e-74    8333.320 - 1.57e-77    8606.171 - 2.17e-72
+JC+R2             -2940.788    6723.575 - 1.15e-77    8302.793 - 6.68e-71    8606.433 -  1.9e-72
+JC+I+G4           -2941.463    6724.926 - 5.84e-78    8304.143 -  3.4e-71    8607.783 - 9.67e-73
+JC+G4             -2944.878    6729.755 - 5.22e-79    8294.534 - 4.15e-69    8608.141 - 8.09e-73
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Model of substitution: K2P+R2
+
+Rate parameter R:
+
+  A-C: 1.0000
+  A-G: 10.5466
+  A-T: 1.0000
+  C-G: 1.0000
+  C-T: 10.5466
+  G-T: 1.0000
+
+State frequencies: (equal frequencies)
+
+Rate matrix Q:
+
+  A        -1    0.0797    0.8406    0.0797
+  C    0.0797        -1    0.0797    0.8406
+  G    0.8406    0.0797        -1    0.0797
+  T    0.0797    0.8406    0.0797        -1
+
+Model of rate heterogeneity: FreeRate with 2 categories
+Site proportion and rates:  (0.8424,0.23) (0.1576,5.115)
+
+ Category  Relative_rate  Proportion
+  1         0.23           0.8424
+  2         5.115          0.1576
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -2773.6085 (s.e. 137.7021)
+Unconstrained log-likelihood (without tree): -2624.9622
+Number of free parameters (#branches + #model parameters): 422
+Akaike information criterion (AIC) score: 6391.2170
+Corrected Akaike information criterion (AICc) score: 7985.0205
+Bayesian information criterion (BIC) score: 8278.5471
+
+Total tree length (sum of branch lengths): 0.5976
+Sum of internal branch lengths: 0.3919 (65.5758% of tree length)
+
+WARNING: 150 near-zero internal branches (<0.0015) should be treated with caution
+         Such branches are denoted by '**' in the figure below
+
+NOTE: Tree is UNROOTED although outgroup taxon 'AB034824_Coregonus_lavaretus' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++--AB034824_Coregonus_lavaretus
+|
+|                                                                   +**AP013050_Prosopium_cylindraceum
+|                                                                +**| (0/74)
+|                                                                |  +**EU524294_Prosopium_cylindraceum
+|                                                             +**| (0/33)
+|                                                             |  |        +**KP978218_Prosopium_cylindraceum
+|                                                             |  |     +**| (0/82)
+|                                                             |  |     |  +**KP978219_Prosopium_cylindraceum
+|                                                             |  |  +--| (85/99)
+|                                                             |  |  |  +--KP978224_Prosopium_cylindraceum
+|                                                             |  +**| (0/40)
+|                                                             |     |  +**MG951550_Prosopium_cylindraceum
+|                                                             |     +--| (84/99)
+|                                                             |        +--MG951551_Prosopium_cylindraceum
+|                                                          +**| (0/62)
+|                                                          |  |           +**EU202656_Prosopium_cylindraceum
+|                                                          |  |        +--| (85.1/98)
+|                                                          |  |        |  +**JX960932_Prosopium_cylindraceum
+|                                                          |  |     +--| (91/99)
+|                                                          |  |     |  |  +**KP978217_Prosopium_cylindraceum
+|                                                          |  |     |  +**| (0/79)
+|                                                          |  |     |     +**KP978221_Prosopium_cylindraceum
+|                                                          |  |  +**| (0/54)
+|                                                          |  |  |  |        +**JQ390062_Prosopium_cylindraceum
+|                                                          |  |  |  |     +**| (0/27)
+|                                                          |  |  |  |     |  +--KT630727_Prosopium_cylindraceum
+|                                                          |  |  |  |  +**| (0/24)
+|                                                          |  |  |  |  |  +**KU258410_Prosopium_cylindraceum
+|                                                          |  |  |  +**| (0/68)
+|                                                          |  |  |     +--KU258411_Prosopium_cylindraceum
+|                                                          |  +--| (92.1/99)
+|                                                          |     |  +**EU202657_Prosopium_cylindraceum
+|                                                          |     +**| (0/64)
+|                                                          |        +**EU524288_Prosopium_cylindraceum
+|                                                    +-----| (91.3/95)
+|                                                    |     +--EU524289_Prosopium_cylindraceum
+|                                          +---------| (97.6/97)
+|                                          |         |                    +**EU522438_Prosopium_williamsoni
+|                                          |         |                 +**| (0/69)
+|                                          |         |                 |  +**JX960939_Prosopium_williamsoni
+|                                          |         |              +--| (93.4/98)
+|                                          |         |              |  +--JX960938_Prosopium_williamsoni
+|                                          |         |           +**| (0/50)
+|                                          |         |           |  +--HQ557337_Prosopium_williamsoni
+|                                          |         |        +**| (0/46)
+|                                          |         |        |  +**EU524301_Prosopium_williamsoni
+|                                          |         |     +--| (86.1/83)
+|                                          |         |     |  +--EU524304_Prosopium_williamsoni
+|                                          |         |  +--| (71.2/81)
+|                                          |         |  |  |     +**EU524303_Prosopium_williamsoni
+|                                          |         |  |  |  +**| (0/76)
+|                                          |         |  |  |  |  +**JQ390061_Prosopium_williamsoni
+|                                          |         |  |  +**| (0/68)
+|                                          |         |  |     +**FJ918926_Prosopium_williamsoni
+|                                          |         +--| (86.8/93)
+|                                          |            |     +--JX960929_Prosopium_abyssicola
+|                                          |            |  +--| (81.5/97)
+|                                          |            |  |  |  +**JX960934_Prosopium_gemmifer
+|                                          |            |  |  +**| (0/85)
+|                                          |            |  |     +**JX960935_Prosopium_gemmifer
+|                                          |            +--| (93.2/96)
+|                                          |               +**JX960936_Prosopium_spilonotus
+|                       +------------------| (99.8/100)
+|                       |                  |                                       +**EU202654_Prosopium_coulterii
+|                       |                  |                                    +**| (0/72)
+|                       |                  |                                    |  +**EU525104_Prosopium_coulterii
+|                       |                  |                                 +**| (0/76)
+|                       |                  |                                 |  +--KX145332_Prosopium_coulterii
+|                       |                  |                              +**| (0/86)
+|                       |                  |                              |  |  +**KF536940_Prosopium_coulterii
+|                       |                  |                              |  +--| (90.7/99)
+|                       |                  |                              |     +**KF536943_Prosopium_coulterii
+|                       |                  |                          +---| (88/88)
+|                       |                  |                          |   |  +**EU202655_Prosopium_coulterii
+|                       |                  |                          |   +--| (92.1/95)
+|                       |                  |                          |      +**EU525103_Prosopium_coulterii
+|                       |                  +--------------------------| (100/100)
+|                       |                                             |  +**KT630728_Prosopium_coulterii
+|                       |                                             +**| (0/87)
+|                       |                                                +**KT630730_Prosopium_coulterii
+|                    +--| (77.2/95)
+|                    |  |   +**EU524489_Coregonus_huntsmani
+|                    |  +---| (93/100)
+|                    |      +**JX960886_Coregonus_huntsmani
+|                 +--| (90.1/98)
+|                 |  |        +**EU202658_Stenodus_leucichthys
+|                 |  |     +**| (0/55)
+|                 |  |     |  +**EU522428_Stenodus_leucichthys
+|                 |  |  +**| (0/48)
+|                 |  |  |  |  +**KT630715_Stenodus_leucichthys
+|                 |  |  |  +**| (0/73)
+|                 |  |  |     +**KT630716_Stenodus_leucichthys
+|                 |  +--| (98.3/99)
+|                 |     |  +**EU522426_Stenodus_leucichthys
+|                 |     +--| (81.5/100)
+|                 |        +**EU522427_Stenodus_leucichthys
+|              +--| (74.9/89)
+|              |  |           +**EU202649_Coregonus_autumnalis
+|              |  |        +**| (0/11)
+|              |  |        |  +--EU523948_Coregonus_autumnalis
+|              |  |     +**| (0/31)
+|              |  |     |  +**EU523946_Coregonus_autumnalis
+|              |  |  +**| (57.8/94)
+|              |  |  |  |  +**KX958407_Coregonus_autumnalis
+|              |  |  |  +**| (0/62)
+|              |  |  |     +**KX958408_Coregonus_autumnalis
+|              |  +--| (94.5/99)
+|              |     |                          +**EU202650_Coregonus_laurettae
+|              |     |                       +**| (0/4)
+|              |     |                       |  |     +--EU523967_Coregonus_laurettae
+|              |     |                       |  |  +**| (0/36)
+|              |     |                       |  |  |  +--EU523971_Coregonus_laurettae
+|              |     |                       |  +**| (0/3)
+|              |     |                       |     |  +**JX960888_Coregonus_laurettae
+|              |     |                       |     +**| (0/19)
+|              |     |                       |        +**KT583727_Coregonus_laurettae
+|              |     |                    +**| (0/7)
+|              |     |                    |  +**EU523966_Coregonus_laurettae
+|              |     |                 +**| (0/31)
+|              |     |                 |  +**KT583726_Coregonus_laurettae
+|              |     |              +--| (90.3/97)
+|              |     |              |  +--EU523970_Coregonus_laurettae
+|              |     |           +--| (26.2/43)
+|              |     |           |  +**EU523963_Coregonus_hoyi
+|              |     |        +--| (88.4/48)
+|              |     |        |  |        +**EU523939_Coregonus_artedi
+|              |     |        |  |     +**| (0/48)
+|              |     |        |  |     |  +**JX960879_Coregonus_artedi
+|              |     |        |  |  +**| (0/13)
+|              |     |        |  |  |  |     +--EU523981_Coregonus_nigripinnis
+|              |     |        |  |  |  |  +**| (80.5/97)
+|              |     |        |  |  |  |  |  +--MH301055_Coregonus_artedi
+|              |     |        |  |  |  +**| (0/13)
+|              |     |        |  |  |     +--KX145095_Coregonus_nigripinnis
+|              |     |        |  +**| (0/45)
+|              |     |        |     |  +--EU523961_Coregonus_hoyi
+|              |     |        |     +**| (0/28)
+|              |     |        |        +--JX960887_Coregonus_kiyi
+|              |     |     +**| (0/20)
+|              |     |     |  +--KX145234_Coregonus_nigripinnis
+|              |     |  +--| (82.9/69)
+|              |     |  |  |  +**EU523942_Coregonus_artedi
+|              |     |  |  +**| (0/57)
+|              |     |  |     |  +**JX960878_Coregonus_artedi
+|              |     |  |     +**| (0/22)
+|              |     |  |        +**JX960885_Coregonus_hoyi
+|              |     +--| (77.3/91)
+|              |        +**KP978026_Coregonus_artedi
+|           +--| (86/98)
+|           |  |                       +**EU202653_Coregonus_sardinella
+|           |  |                    +**| (0/19)
+|           |  |                    |  |           +**EU523982_Coregonus_sardinella
+|           |  |                    |  |        +**| (0/20)
+|           |  |                    |  |        |  |     +--JX960877_Coregonus_albula
+|           |  |                    |  |        |  |  +**| (0/12)
+|           |  |                    |  |        |  |  |  |     +--KJ128463_Coregonus_albula
+|           |  |                    |  |        |  |  |  |  +**| (0/28)
+|           |  |                    |  |        |  |  |  |  |  +**KM286592_Coregonus_albula
+|           |  |                    |  |        |  |  |  +**| (0/44)
+|           |  |                    |  |        |  |  |     +**MH807245_Coregonus_sardinella
+|           |  |                    |  |        |  +**| (0/23)
+|           |  |                    |  |        |     |           +**KM286536_Coregonus_albula
+|           |  |                    |  |        |     |        +**| (0/42)
+|           |  |                    |  |        |     |        |  +**KM286537_Coregonus_albula
+|           |  |                    |  |        |     |     +--| (84/98)
+|           |  |                    |  |        |     |     |  |     +**KM286570_Coregonus_albula
+|           |  |                    |  |        |     |     |  |  +**| (0/47)
+|           |  |                    |  |        |     |     |  |  |  +**KM286587_Coregonus_albula
+|           |  |                    |  |        |     |     |  +**| (0/59)
+|           |  |                    |  |        |     |     |     |  +**KM286588_Coregonus_albula
+|           |  |                    |  |        |     |     |     +**| (0/71)
+|           |  |                    |  |        |     |     |        +**KM286608_Coregonus_lucinensis
+|           |  |                    |  |        |     |  +**| (0/9)
+|           |  |                    |  |        |     |  |  +--KX457956_Coregonus_albula
+|           |  |                    |  |        |     +**| (0/20)
+|           |  |                    |  |        |        |     +**KM286586_Coregonus_albula
+|           |  |                    |  |        |        |  +--| (83.4/99)
+|           |  |                    |  |        |        |  |  +**MT833789_Coregonus_albula
+|           |  |                    |  |        |        +**| (0/18)
+|           |  |                    |  |        |           +--KX457959_Coregonus_albula
+|           |  |                    |  |     +**| (0/5)
+|           |  |                    |  |     |  |     +**HQ960662_Coregonus_peled
+|           |  |                    |  |     |  |  +--| (91.3/99)
+|           |  |                    |  |     |  |  |  |  +**MF632322_Coregonus_peled
+|           |  |                    |  |     |  |  |  +**| (0/75)
+|           |  |                    |  |     |  |  |     +**MH807251_Coregonus_sardinella
+|           |  |                    |  |     |  +**| (0/19)
+|           |  |                    |  |     |     |  +**KM286540_Coregonus_albula
+|           |  |                    |  |     |     +**| (0/16)
+|           |  |                    |  |     |        |  +--KM286581_Coregonus_albula
+|           |  |                    |  |     |        +**| (0/19)
+|           |  |                    |  |     |           +--KM286582_Coregonus_albula
+|           |  |                    |  |  +**| (0/20)
+|           |  |                    |  |  |  |        +--EU523983_Coregonus_sardinella
+|           |  |                    |  |  |  |     +--| (87/98)
+|           |  |                    |  |  |  |     |  +**KX457957_Coregonus_albula
+|           |  |                    |  |  |  |  +**| (0/26)
+|           |  |                    |  |  |  |  |  +--KM286544_Coregonus_albula
+|           |  |                    |  |  |  +**| (0/12)
+|           |  |                    |  |  |     +--JX960876_Coregonus_albula
+|           |  |                    |  +**| (0/15)
+|           |  |                    |     |              +--HQ960661_Coregonus_peled
+|           |  |                    |     |           +--| (84.4/95)
+|           |  |                    |     |           |  +**MF632321_Coregonus_peled
+|           |  |                    |     |        +**| (0/48)
+|           |  |                    |     |        |  +**MH807243_Coregonus_sardinella
+|           |  |                    |     |     +**| (0/29)
+|           |  |                    |     |     |  +--KM286539_Coregonus_albula
+|           |  |                    |     |  +**| (0/30)
+|           |  |                    |     |  |  +**KJ128461_Coregonus_albula
+|           |  |                    |     +**| (0/19)
+|           |  |                    |        |     +**KM286533_Coregonus_albula
+|           |  |                    |        |  +**| (0/33)
+|           |  |                    |        |  |  +**KM286541_Coregonus_albula
+|           |  |                    |        +**| (0/31)
+|           |  |                    |           |  +--KM286559_Coregonus_albula
+|           |  |                    |           +**| (0/29)
+|           |  |                    |              +--MF632323_Coregonus_nasus
+|           |  |                 +**| (0/9)
+|           |  |                 |  |  +--EU523987_Coregonus_sardinella
+|           |  |                 |  +**| (0/16)
+|           |  |                 |     |  +**KM286591_Coregonus_albula
+|           |  |                 |     +**| (0/17)
+|           |  |                 |        |        +--KT630719_Coregonus_sardinella
+|           |  |                 |        |     +--| (85.9/82)
+|           |  |                 |        |     |  +**KT630721_Coregonus_sardinella
+|           |  |                 |        |  +**| (0/13)
+|           |  |                 |        |  |  +**MF632324_Coregonus_peled
+|           |  |                 |        +**| (0/15)
+|           |  |                 |           +**KU867883_Coregonus_sardinella
+|           |  |              +**| (0/44)
+|           |  |              |  |     +**KM286534_Coregonus_albula
+|           |  |              |  |  +--| (92/99)
+|           |  |              |  |  |  +**KM286560_Coregonus_albula
+|           |  |              |  +**| (0/9)
+|           |  |              |     +**KM286535_Coregonus_albula
+|           |  |           +**| (0/16)
+|           |  |           |  +**KM286543_Coregonus_albula
+|           |  |        +**| (0/16)
+|           |  |        |  +**KM286593_Coregonus_albula
+|           |  |     +**| (0/60)
+|           |  |     |  |     +--KM286547_Coregonus_albula
+|           |  |     |  |  +**| (0/5)
+|           |  |     |  |  |  |  +**KM286575_Coregonus_albula
+|           |  |     |  |  |  +**| (0/26)
+|           |  |     |  |  |     |  +**MT833787_Coregonus_albula
+|           |  |     |  |  |     +**| (0/97)
+|           |  |     |  |  |        +**MT833790_Coregonus_albula
+|           |  |     |  +**| (0/4)
+|           |  |     |     +**KM286550_Coregonus_albula
+|           |  |  +--| (94.7/100)
+|           |  |  |  |     +**HQ960631_Coregonus_maraena
+|           |  |  |  |  +--| (83.8/93)
+|           |  |  |  |  |  +**MF632325_Coregonus_peled
+|           |  |  |  +**| (0/31)
+|           |  |  |     +--KX457958_Coregonus_albula
+|           |  +**| (0/45)
+|           |     +------JX960901_Coregonus_tugun
+|        +**| (76.7/48)
+|        |  +--JX960902_Coregonus_ussuriensis
+|     +--| (78.8/97)
+|     |  |                    +**EU202652_Coregonus_nasus
+|     |  |                 +**| (0/30)
+|     |  |                 |  +**EU523976_Coregonus_nasus
+|     |  |              +**| (0/44)
+|     |  |              |  +**EU523973_Coregonus_nasus
+|     |  |           +**| (0/40)
+|     |  |           |  |        +**KT630722_Coregonus_nasus
+|     |  |           |  |     +**| (0/22)
+|     |  |           |  |     |  |  +--KU867881_Coregonus_nasus
+|     |  |           |  |     |  +**| (0/53)
+|     |  |           |  |     |     +**KU867882_Coregonus_nasus
+|     |  |           |  |  +**| (0/14)
+|     |  |           |  |  |  +--MF632312_Coregonus_nasus
+|     |  |           |  +**| (0/49)
+|     |  |           |     |     +**KT630724_Coregonus_nasus
+|     |  |           |     |  +**| (0/6)
+|     |  |           |     |  |  +**MH807247_Coregonus_nasus
+|     |  |           |     +**| (0/18)
+|     |  |           |        +**MF632313_Coregonus_nasus
+|     |  |        +**| (0/43)
+|     |  |        |  +--EU523979_Coregonus_nasus
+|     |  |     +--| (84.4/57)
+|     |  |     |  +--JQ390058_Coregonus_nasus
+|     |  |  +--| (92.2/86)
+|     |  |  |  +**MF632314_Coregonus_nasus
+|     |  +**| (0/32)
+|     |     |              +--JX960891_Coregonus_migratorius
+|     |     |           +**| (0/67)
+|     |     |           |  |     +**MF632318_Coregonus_migratorius
+|     |     |           |  |  +--| (85/100)
+|     |     |           |  |  |  +--MN394789_Coregonus_migratorius
+|     |     |           |  +--| (88.2/97)
+|     |     |           |     |  +**MN394785_Coregonus_baicalensis
+|     |     |           |     +**| (0/92)
+|     |     |           |        +**MN394786_Coregonus_baicalensis
+|     |     |        +**| (0/47)
+|     |     |        |  +**NC045227_Coregonus_migratorius
+|     |     |     +--| (92.2/98)
+|     |     |     |  |  +**MF632317_Coregonus_migratorius
+|     |     |     |  +**| (0/87)
+|     |     |     |     +**MF632319_Coregonus_migratorius
+|     |     |  +**| (0/75)
+|     |     |  |  +**MF632320_Coregonus_migratorius
+|     |     +--| (94.4/99)
+|     |        +--MN394788_Coregonus_migratorius
+|  +--| (77.6/96)
+|  |  |                                         +**EU427541_Coregonus_pidschian
+|  |  |                                      +--| (86.2/99)
+|  |  |                                      |  +**EU523956_Coregonus_clupeaformis
+|  |  |                                   +**| (0/25)
+|  |  |                                   |  +--EU523952_Coregonus_clupeaformis
+|  |  |                                +--| (87.9/98)
+|  |  |                                |  +--EU523955_Coregonus_clupeaformis
+|  |  |                             +**| (0/34)
+|  |  |                             |  |  +--KR733397_Coregonus_clupeaformis
+|  |  |                             |  +--| (86.1/98)
+|  |  |                             |     +**KR733412_Coregonus_clupeaformis
+|  |  |                          +**| (0/20)
+|  |  |                          |  +**KR733401_Coregonus_clupeaformis
+|  |  |                       +**| (0/8)
+|  |  |                       |  |     +--EU523957_Coregonus_clupeaformis
+|  |  |                       |  |  +**| (0/24)
+|  |  |                       |  |  |  |  +**KP978113_Coregonus_clupeaformis
+|  |  |                       |  |  |  +--| (84.8/99)
+|  |  |                       |  |  |     +**KR733407_Coregonus_clupeaformis
+|  |  |                       |  +**| (0/15)
+|  |  |                       |     |        +**KP978101_Coregonus_clupeaformis
+|  |  |                       |     |     +--| (85.3/99)
+|  |  |                       |     |     |  +**KP978122_Coregonus_clupeaformis
+|  |  |                       |     |  +**| (0/40)
+|  |  |                       |     |  |  +--KP978117_Coregonus_clupeaformis
+|  |  |                       |     +**| (0/13)
+|  |  |                       |        |        +**KR733391_Coregonus_clupeaformis
+|  |  |                       |        |     +--| (0/31)
+|  |  |                       |        |     |  |  +**KU258399_Coregonus_pidschian
+|  |  |                       |        |     |  +**| (0/99)
+|  |  |                       |        |     |     +**KU258400_Coregonus_pidschian
+|  |  |                       |        |  +**| (0/18)
+|  |  |                       |        |  |  +**KU258398_Coregonus_pidschian
+|  |  |                       |        +**| (0/48)
+|  |  |                       |           +**KR733406_Coregonus_clupeaformis
+|  |  |                    +**| (0/8)
+|  |  |                    |  +**JQ661482_Coregonus_clupeaformis
+|  |  |                 +**| (0/6)
+|  |  |                 |  +**KP978049_Coregonus_clupeaformis
+|  |  |              +**| (0/17)
+|  |  |              |  |  +--KP978148_Coregonus_clupeaformis
+|  |  |              |  +**| (0/20)
+|  |  |              |     +**KR733409_Coregonus_clupeaformis
+|  |  |           +**| (0/5)
+|  |  |           |  |     +--KP978055_Coregonus_clupeaformis
+|  |  |           |  |  +**| (0/1)
+|  |  |           |  |  |  |  +**KP978199_Coregonus_clupeaformis
+|  |  |           |  |  |  +**| (0/7)
+|  |  |           |  |  |     |  +**KR733403_Coregonus_clupeaformis
+|  |  |           |  |  |     +**| (0/9)
+|  |  |           |  |  |        |  +**KR733419_Coregonus_clupeaformis
+|  |  |           |  |  |        +**| (0/13)
+|  |  |           |  |  |           +**MH807244_Coregonus_pidschian
+|  |  |           |  +**| (0/19)
+|  |  |           |     |     +**KP978118_Coregonus_clupeaformis
+|  |  |           |     |  +--| (0/100)
+|  |  |           |     |  |  +**KP978120_Coregonus_clupeaformis
+|  |  |           |     +**| (0/21)
+|  |  |           |        +**KR733421_Coregonus_clupeaformis
+|  |  |        +**| (0/27)
+|  |  |        |  +**EU523958_Coregonus_clupeaformis
+|  |  |     +**| (0/41)
+|  |  |     |  +--KP978039_Coregonus_clupeaformis
+|  |  |  +--| (85.5/98)
+|  |  |  |  +--KR733394_Coregonus_clupeaformis
+|  |  +**| (80.8/98)
+|  |     +**JQ390060_Coregonus_clupeaformis
++**| (0/27)
+|  |           +**EU202651_Coregonus_pidschian
+|  |        +**| (0/5)
+|  |        |  |     +**JQ661403_Coregonus_oxyrinchus
+|  |        |  |  +--| (92.1/99)
+|  |        |  |  |  +**JQ661408_Coregonus_oxyrinchus
+|  |        |  +**| (0/9)
+|  |        |     |     +**KC296706_Coregonus_sp
+|  |        |     |  +**| (0/34)
+|  |        |     |  |  +**KM286579_Coregonus_albula
+|  |        |     +**| (0/24)
+|  |        |        +**KM286583_Coregonus_albula
+|  |     +**| (0/4)
+|  |     |  |  +**HM902202_Salmoniformes_sp
+|  |     |  +**| (0/5)
+|  |     |     |     +**KR477023_Coregonus_sp
+|  |     |     |  +**| (0/31)
+|  |     |     |  |  +**KT630725_Coregonus_pidschian
+|  |     |     +**| (0/6)
+|  |     |        +--MG951552_Coregonus_lavaretus
+|  |  +**| (0/21)
+|  |  |  |     +**JQ661400_Coregonus_oxyrinchus
+|  |  |  |  +--| (92/98)
+|  |  |  |  |  +**JQ661410_Coregonus_oxyrinchus
+|  |  |  +**| (0/7)
+|  |  |     |  +**KM286580_Coregonus_albula
+|  |  |     +**| (0/36)
+|  |  |        +--KM286610_Coregonus_macrophthalmus
+|  +**| (0/22)
+|     |           +**JX960890_Coregonus_lavaretus
+|     |        +**| (0/6)
+|     |        |  +**KR477179_Coregonus_sp
+|     |     +**| (0/4)
+|     |     |  +--KM286600_Coregonus_holsatus
+|     |  +**| (0/20)
+|     |  |  |     +**KR477024_Coregonus_sp
+|     |  |  |  +**| (0/8)
+|     |  |  |  |  +**KR477184_Coregonus_sp
+|     |  |  +**| (0/3)
+|     |  |     |  +**MF632316_Coregonus_nasus
+|     |  |     +**| (0/36)
+|     |  |        +**MH807246_Coregonus_pidschian
+|     +**| (0/19)
+|        +**KJ128465_Coregonus_maraena
+|
++--MF632315_Coregonus_nasus
+
+Tree in newick format:
+
+(AB034824_Coregonus_lavaretus:0.0015499504,((((((((((((((AP013050_Prosopium_cylindraceum:0.0000010332,EU524294_Prosopium_cylindraceum:0.0000010332)0/74:0.0000010333,(((KP978218_Prosopium_cylindraceum:0.0000010332,KP978219_Prosopium_cylindraceum:0.0000010332)0/82:0.0000010333,KP978224_Prosopium_cylindraceum:0.0015509567)85/99:0.0015509910,(MG951550_Prosopium_cylindraceum:0.0000010332,MG951551_Prosopium_cylindraceum:0.0015509797)84/99:0.0015510123)0/40:0.0000010333)0/33:0.0000010333,((((EU202656_Prosopium_cylindraceum:0.0000010332,JX960932_Prosopium_cylindraceum:0.0000010332)85.1/98:0.0015535378,(KP978217_Prosopium_cylindraceum:0.0000010332,KP978221_Prosopium_cylindraceum:0.0000010332)0/79:0.0000010333)91/99:0.0031165339,(((JQ390062_Prosopium_cylindraceum:0.0015454730,KT630727_Prosopium_cylindraceum:0.0016554162)0/27:0.0000021862,KU258410_Prosopium_cylindraceum:0.0000010332)0/24:0.0000010333,KU258411_Prosopium_cylindraceum:0.0016523709)0/68:0.0000021847)0/54:0.0000010333,(EU202657_Prosopium_cylindraceum:0.0000010332,EU524288_Prosopium_cylindraceum:0.0000010332)0/64:0.0000010333)92.1/99:0.0015536306)0/62:0.0000026806,EU524289_Prosopium_cylindraceum:0.0015503294)91.3/95:0.0236968582,(((((((EU522438_Prosopium_williamsoni:0.0000010332,JX960939_Prosopium_williamsoni:0.0000010332)0/69:0.0000010333,JX960938_Prosopium_williamsoni:0.0015505900)93.4/98:0.0031158567,HQ557337_Prosopium_williamsoni:0.0047045800)0/50:0.0000023901,EU524301_Prosopium_williamsoni:0.0000010332)0/46:0.0000022522,EU524304_Prosopium_williamsoni:0.0015506933)86.1/83:0.0015506852,((EU524303_Prosopium_williamsoni:0.0000010332,JQ390061_Prosopium_williamsoni:0.0000010332)0/76:0.0000010333,FJ918926_Prosopium_williamsoni:0.0000010332)0/68:0.0000022647)71.2/81:0.0026808019,((JX960929_Prosopium_abyssicola:0.0015507374,(JX960934_Prosopium_gemmifer:0.0000010332,JX960935_Prosopium_gemmifer:0.0000010332)0/85:0.0000022516)81.5/97:0.0015506753,JX960936_Prosopium_spilonotus:0.0000024100)93.2/96:0.0086190652)86.8/93:0.0118262301)97.6/97:0.0387810574,(((((EU202654_Prosopium_coulterii:0.0000010332,EU525104_Prosopium_coulterii:0.0000010332)0/72:0.0000010333,KX145332_Prosopium_coulterii:0.0015513885)0/76:0.0000030153,(KF536940_Prosopium_coulterii:0.0000010332,KF536943_Prosopium_coulterii:0.0000010332)90.7/99:0.0031961995)0/86:0.0008363174,(EU202655_Prosopium_coulterii:0.0000010332,EU525103_Prosopium_coulterii:0.0000010332)92.1/95:0.0054522969)88/88:0.0169416681,(KT630728_Prosopium_coulterii:0.0000010332,KT630730_Prosopium_coulterii:0.0000010332)0/87:0.0000023460)100/100:0.1067924453)99.8/100:0.0765502102,(EU524489_Coregonus_huntsmani:0.0000010332,JX960886_Coregonus_huntsmani:0.0000010332)93/100:0.0167289215)77.2/95:0.0066753772,(((EU202658_Stenodus_leucichthys:0.0000010332,EU522428_Stenodus_leucichthys:0.0000010332)0/55:0.0000010333,(KT630715_Stenodus_leucichthys:0.0000010332,KT630716_Stenodus_leucichthys:0.0000010332)0/73:0.0000010333)0/48:0.0000010333,(EU522426_Stenodus_leucichthys:0.0000010332,EU522427_Stenodus_leucichthys:0.0000010332)81.5/100:0.0015522515)98.3/99:0.0144110424)90.1/98:0.0079574986,((((EU202649_Coregonus_autumnalis:0.0000010332,EU523948_Coregonus_autumnalis:0.0015505370)0/11:0.0000010333,EU523946_Coregonus_autumnalis:0.0000010332)0/31:0.0000010333,(KX958407_Coregonus_autumnalis:0.0000010332,KX958408_Coregonus_autumnalis:0.0000010332)0/62:0.0000010333)57.8/94:0.0011300012,(((((((((EU202650_Coregonus_laurettae:0.0000010332,((EU523967_Coregonus_laurettae:0.0015503414,EU523971_Coregonus_laurettae:0.0015503095)0/36:0.0000010333,(JX960888_Coregonus_laurettae:0.0000010332,KT583727_Coregonus_laurettae:0.0000010332)0/19:0.0000010333)0/3:0.0000010333)0/4:0.0000010333,EU523966_Coregonus_laurettae:0.0000010332)0/7:0.0000010333,KT583726_Coregonus_laurettae:0.0000010332)0/31:0.0000010333,EU523970_Coregonus_laurettae:0.0015606993)90.3/97:0.0031153730,EU523963_Coregonus_hoyi:0.0000010332)26.2/43:0.0015503910,(((EU523939_Coregonus_artedi:0.0000010332,JX960879_Coregonus_artedi:0.0000010332)0/48:0.0000010333,((EU523981_Coregonus_nigripinnis:0.0015660486,MH301055_Coregonus_artedi:0.0015585218)80.5/97:0.0015428266,KX145095_Coregonus_nigripinnis:0.0015504231)0/13:0.0000010333)0/13:0.0000010333,(EU523961_Coregonus_hoyi:0.0015504749,JX960887_Coregonus_kiyi:0.0015504627)0/28:0.0000010333)0/45:0.0000010333)88.4/48:0.0015504870,KX145234_Coregonus_nigripinnis:0.0015504996)0/20:0.0000010333,(EU523942_Coregonus_artedi:0.0000010332,(JX960878_Coregonus_artedi:0.0000010332,JX960885_Coregonus_hoyi:0.0000010332)0/22:0.0000010333)0/57:0.0000010333)82.9/69:0.0015505097,KP978026_Coregonus_artedi:0.0000010332)77.3/91:0.0019869155)94.5/99:0.0077296479)74.9/89:0.0019663239,((((((((EU202653_Coregonus_sardinella:0.0000010332,((((EU523982_Coregonus_sardinella:0.0000010332,((JX960877_Coregonus_albula:0.0015765041,((KJ128463_Coregonus_albula:0.0015520727,KM286592_Coregonus_albula:0.0000010332)0/28:0.0000020892,MH807245_Coregonus_sardinella:0.0000010332)0/44:0.0000010333)0/12:0.0000010333,((((KM286536_Coregonus_albula:0.0000010332,KM286537_Coregonus_albula:0.0000010332)0/42:0.0000010333,((KM286570_Coregonus_albula:0.0000010332,KM286587_Coregonus_albula:0.0000010332)0/47:0.0000010333,(KM286588_Coregonus_albula:0.0000010332,KM286608_Coregonus_lucinensis:0.0000010332)0/71:0.0000010333)0/59:0.0000010333)84/98:0.0015530783,KX457956_Coregonus_albula:0.0015818062)0/9:0.0000010333,((KM286586_Coregonus_albula:0.0000010332,MT833789_Coregonus_albula:0.0000010332)83.4/99:0.0015530487,KX457959_Coregonus_albula:0.0015530586)0/18:0.0000010333)0/20:0.0000010333)0/23:0.0000010333)0/20:0.0000010333,((HQ960662_Coregonus_peled:0.0000010332,(MF632322_Coregonus_peled:0.0000010332,MH807251_Coregonus_sardinella:0.0000010332)0/75:0.0000010333)91.3/99:0.0015530175,(KM286540_Coregonus_albula:0.0000010332,(KM286581_Coregonus_albula:0.0015591351,KM286582_Coregonus_albula:0.0015544203)0/19:0.0000010333)0/16:0.0000010333)0/19:0.0000010333)0/5:0.0000010333,(((EU523983_Coregonus_sardinella:0.0047350373,KX457957_Coregonus_albula:0.0000027193)87/98:0.0015531381,KM286544_Coregonus_albula:0.0015529758)0/26:0.0000023773,JX960876_Coregonus_albula:0.0015529526)0/12:0.0000010333)0/20:0.0000010333,(((((HQ960661_Coregonus_peled:0.0023355349,MF632321_Coregonus_peled:0.0000010332)84.4/95:0.0023329283,MH807243_Coregonus_sardinella:0.0000010332)0/48:0.0000010333,KM286539_Coregonus_albula:0.0015632730)0/29:0.0000010333,KJ128461_Coregonus_albula:0.0000010332)0/30:0.0000010333,((KM286533_Coregonus_albula:0.0000010332,KM286541_Coregonus_albula:0.0000010332)0/33:0.0000010333,(KM286559_Coregonus_albula:0.0015590743,MF632323_Coregonus_nasus:0.0016231448)0/29:0.0000010333)0/31:0.0000010333)0/19:0.0000010333)0/15:0.0000010333)0/19:0.0000010333,(EU523987_Coregonus_sardinella:0.0015528603,(KM286591_Coregonus_albula:0.0000024342,(((KT630719_Coregonus_sardinella:0.0016111063,KT630721_Coregonus_sardinella:0.0000010332)85.9/82:0.0016139876,MF632324_Coregonus_peled:0.0000010332)0/13:0.0000010333,KU867883_Coregonus_sardinella:0.0000010332)0/15:0.0000010333)0/17:0.0000010333)0/16:0.0000010333)0/9:0.0000024135,((KM286534_Coregonus_albula:0.0000023479,KM286560_Coregonus_albula:0.0000022415)92/99:0.0015631977,KM286535_Coregonus_albula:0.0000010332)0/9:0.0000010333)0/44:0.0004327157,KM286543_Coregonus_albula:0.0000010332)0/16:0.0002432925,KM286593_Coregonus_albula:0.0000010332)0/16:0.0000166953,((KM286547_Coregonus_albula:0.0088502991,(KM286575_Coregonus_albula:0.0000010332,(MT833787_Coregonus_albula:0.0000010332,MT833790_Coregonus_albula:0.0000010332)0/97:0.0000025312)0/26:0.0015183517)0/5:0.0000024234,KM286550_Coregonus_albula:0.0000010332)0/4:0.0000022991)0/60:0.0008862975,((HQ960631_Coregonus_maraena:0.0000010332,MF632325_Coregonus_peled:0.0000010332)83.8/93:0.0015533984,KX457958_Coregonus_albula:0.0079149361)0/31:0.0000029082)94.7/100:0.0059003099,JX960901_Coregonus_tugun:0.0273180364)0/45:0.0000021778)86/98:0.0036668788,JX960902_Coregonus_ussuriensis:0.0099300271)76.7/48:0.0014539632,(((((((EU202652_Coregonus_nasus:0.0000010332,EU523976_Coregonus_nasus:0.0000010332)0/30:0.0000010333,EU523973_Coregonus_nasus:0.0000010332)0/44:0.0000010333,(((KT630722_Coregonus_nasus:0.0000010332,(KU867881_Coregonus_nasus:0.0017583476,KU867882_Coregonus_nasus:0.0000010332)0/53:0.0000010333)0/22:0.0000010333,MF632312_Coregonus_nasus:0.0016089408)0/14:0.0000010333,((KT630724_Coregonus_nasus:0.0000010332,MH807247_Coregonus_nasus:0.0000010332)0/6:0.0000010333,MF632313_Coregonus_nasus:0.0000010332)0/18:0.0000010333)0/49:0.0000010333)0/40:0.0000010333,EU523979_Coregonus_nasus:0.0031146477)0/43:0.0000010333,JQ390058_Coregonus_nasus:0.0047222453)84.4/57:0.0015505225,MF632314_Coregonus_nasus:0.0000024515)92.2/86:0.0031156930,(((((JX960891_Coregonus_migratorius:0.0015619169,((MF632318_Coregonus_migratorius:0.0000010332,MN394789_Coregonus_migratorius:0.0015503438)85/100:0.0015503795,(MN394785_Coregonus_baicalensis:0.0000027397,MN394786_Coregonus_baicalensis:0.0000010332)0/92:0.0000024045)88.2/97:0.0015501448)0/67:0.0000023837,NC045227_Coregonus_migratorius:0.0000010332)0/47:0.0000023186,(MF632317_Coregonus_migratorius:0.0000010332,MF632319_Coregonus_migratorius:0.0000010332)0/87:0.0000023811)92.2/98:0.0015501726,MF632320_Coregonus_migratorius:0.0000025391)0/75:0.0000025077,MN394788_Coregonus_migratorius:0.0015501713)94.4/99:0.0031153992)0/32:0.0000021661)78.8/97:0.0015594806,((((((((((((((EU427541_Coregonus_pidschian:0.0000010332,EU523956_Coregonus_clupeaformis:0.0000010332)86.2/99:0.0015498444,EU523952_Coregonus_clupeaformis:0.0015498580)0/25:0.0000010333,EU523955_Coregonus_clupeaformis:0.0015498708)87.9/98:0.0015498848,(KR733397_Coregonus_clupeaformis:0.0015600930,KR733412_Coregonus_clupeaformis:0.0000010332)86.1/98:0.0015497661)0/34:0.0000023948,KR733401_Coregonus_clupeaformis:0.0000010332)0/20:0.0000010333,((EU523957_Coregonus_clupeaformis:0.0015496879,(KP978113_Coregonus_clupeaformis:0.0000010332,KR733407_Coregonus_clupeaformis:0.0000010332)84.8/99:0.0015496518)0/24:0.0000010333,(((KP978101_Coregonus_clupeaformis:0.0000010332,KP978122_Coregonus_clupeaformis:0.0000010332)85.3/99:0.0015496499,KP978117_Coregonus_clupeaformis:0.0015496658)0/40:0.0000010333,(((KR733391_Coregonus_clupeaformis:0.0000010332,(KU258399_Coregonus_pidschian:0.0000010332,KU258400_Coregonus_pidschian:0.0000010332)0/99:0.0000010333)0/31:0.0031864175,KU258398_Coregonus_pidschian:0.0000010332)0/18:0.0000025563,KR733406_Coregonus_clupeaformis:0.0000010332)0/48:0.0000025275)0/13:0.0000010333)0/15:0.0000010333)0/8:0.0000010333,JQ661482_Coregonus_clupeaformis:0.0000010332)0/8:0.0000010333,KP978049_Coregonus_clupeaformis:0.0000010332)0/6:0.0000010333,(KP978148_Coregonus_clupeaformis:0.0015600471,KR733409_Coregonus_clupeaformis:0.0000010332)0/20:0.0000010333)0/17:0.0000010333,((KP978055_Coregonus_clupeaformis:0.0015497677,(KP978199_Coregonus_clupeaformis:0.0000010332,(KR733403_Coregonus_clupeaformis:0.0000010332,(KR733419_Coregonus_clupeaformis:0.0000010332,MH807244_Coregonus_pidschian:0.0000010332)0/13:0.0000010333)0/9:0.0000010333)0/7:0.0000010333)0/1:0.0000010333,((KP978118_Coregonus_clupeaformis:0.0000010332,KP978120_Coregonus_clupeaformis:0.0000010332)0/100:0.0015475875,KR733421_Coregonus_clupeaformis:0.0000010332)0/21:0.0000021806)0/19:0.0000010333)0/5:0.0000010333,EU523958_Coregonus_clupeaformis:0.0000010332)0/27:0.0000010333,KP978039_Coregonus_clupeaformis:0.0015600970)0/41:0.0000010333,KR733394_Coregonus_clupeaformis:0.0015498374)85.5/98:0.0015498473,JQ390060_Coregonus_clupeaformis:0.0000010332)80.8/98:0.0015430522)77.6/96:0.0015725789,((((EU202651_Coregonus_pidschian:0.0000010332,((JQ661403_Coregonus_oxyrinchus:0.0000010332,JQ661408_Coregonus_oxyrinchus:0.0000010332)92.1/99:0.0015588387,((KC296706_Coregonus_sp:0.0000010332,KM286579_Coregonus_albula:0.0000010332)0/34:0.0000010333,KM286583_Coregonus_albula:0.0000010332)0/24:0.0000010333)0/9:0.0000010333)0/5:0.0000010333,(HM902202_Salmoniformes_sp:0.0000010332,((KR477023_Coregonus_sp:0.0000010332,KT630725_Coregonus_pidschian:0.0000010332)0/31:0.0000010333,MG951552_Coregonus_lavaretus:0.0015602195)0/6:0.0000010333)0/5:0.0000010333)0/4:0.0000010333,((JQ661400_Coregonus_oxyrinchus:0.0000010332,JQ661410_Coregonus_oxyrinchus:0.0000010332)92/98:0.0015499166,(KM286580_Coregonus_albula:0.0000010332,KM286610_Coregonus_macrophthalmus:0.0016688713)0/36:0.0000010333)0/7:0.0000010333)0/21:0.0000010333,((((JX960890_Coregonus_lavaretus:0.0000010332,KR477179_Coregonus_sp:0.0000010332)0/6:0.0000010333,KM286600_Coregonus_holsatus:0.0015631437)0/4:0.0000010333,((KR477024_Coregonus_sp:0.0000010332,KR477184_Coregonus_sp:0.0000010332)0/8:0.0000010333,(MF632316_Coregonus_nasus:0.0000010332,MH807246_Coregonus_pidschian:0.0000010332)0/36:0.0000010333)0/3:0.0000010333)0/20:0.0000010333,KJ128465_Coregonus_maraena:0.0000010332)0/19:0.0000010333)0/22:0.0000010333)0/27:0.0000010333,MF632315_Coregonus_nasus:0.0016089032);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000 bootstrap trees
+Log-likelihood of consensus tree: -2773.909773
+Robinson-Foulds distance between ML tree and consensus tree: 90
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--AB034824_Coregonus_lavaretus
+|
+|                                                                      +--AP013050_Prosopium_cylindraceum
+|                                                                   +--| (74)
+|                                                                   |  +--EU524294_Prosopium_cylindraceum
+|                                                                +--| (33)
+|                                                                |  |        +--KP978218_Prosopium_cylindraceum
+|                                                                |  |     +--| (82)
+|                                                                |  |     |  +--KP978219_Prosopium_cylindraceum
+|                                                                |  |  +--| (99)
+|                                                                |  |  |  +--KP978224_Prosopium_cylindraceum
+|                                                                |  +--| (40)
+|                                                                |     |  +--MG951550_Prosopium_cylindraceum
+|                                                                |     +--| (99)
+|                                                                |        +--MG951551_Prosopium_cylindraceum
+|                                                             +--| (62)
+|                                                             |  |           +--EU202656_Prosopium_cylindraceum
+|                                                             |  |        +--| (98)
+|                                                             |  |        |  +--JX960932_Prosopium_cylindraceum
+|                                                             |  |     +--| (99)
+|                                                             |  |     |  |  +--KP978217_Prosopium_cylindraceum
+|                                                             |  |     |  +--| (79)
+|                                                             |  |     |     +--KP978221_Prosopium_cylindraceum
+|                                                             |  |  +--| (54)
+|                                                             |  |  |  |        +--JQ390062_Prosopium_cylindraceum
+|                                                             |  |  |  |     +**| (33)
+|                                                             |  |  |  |     |  +--KU258411_Prosopium_cylindraceum
+|                                                             |  |  |  |  +--| (30)
+|                                                             |  |  |  |  |  +--KT630727_Prosopium_cylindraceum
+|                                                             |  |  |  +--| (68)
+|                                                             |  |  |     +--KU258410_Prosopium_cylindraceum
+|                                                             |  +--| (99)
+|                                                             |     |  +--EU202657_Prosopium_cylindraceum
+|                                                             |     +--| (64)
+|                                                             |        +--EU524288_Prosopium_cylindraceum
+|                                                       +-----| (95)
+|                                                       |     +--EU524289_Prosopium_cylindraceum
+|                                             +---------| (97)
+|                                             |         |                    +--EU522438_Prosopium_williamsoni
+|                                             |         |                 +--| (69)
+|                                             |         |                 |  +--JX960939_Prosopium_williamsoni
+|                                             |         |              +--| (98)
+|                                             |         |              |  +--JX960938_Prosopium_williamsoni
+|                                             |         |           +--| (50)
+|                                             |         |           |  +--HQ557337_Prosopium_williamsoni
+|                                             |         |        +--| (46)
+|                                             |         |        |  +--EU524301_Prosopium_williamsoni
+|                                             |         |     +--| (83)
+|                                             |         |     |  +--EU524304_Prosopium_williamsoni
+|                                             |         |  +--| (81)
+|                                             |         |  |  |     +--EU524303_Prosopium_williamsoni
+|                                             |         |  |  |  +--| (76)
+|                                             |         |  |  |  |  +--JQ390061_Prosopium_williamsoni
+|                                             |         |  |  +--| (68)
+|                                             |         |  |     +--FJ918926_Prosopium_williamsoni
+|                                             |         +--| (93)
+|                                             |            |     +--JX960929_Prosopium_abyssicola
+|                                             |            |  +--| (97)
+|                                             |            |  |  |  +--JX960934_Prosopium_gemmifer
+|                                             |            |  |  +--| (85)
+|                                             |            |  |     +--JX960935_Prosopium_gemmifer
+|                                             |            +--| (96)
+|                                             |               +--JX960936_Prosopium_spilonotus
+|                          +------------------| (100)
+|                          |                  |                                       +--EU202654_Prosopium_coulterii
+|                          |                  |                                    +--| (72)
+|                          |                  |                                    |  +--EU525104_Prosopium_coulterii
+|                          |                  |                                 +--| (76)
+|                          |                  |                                 |  +--KX145332_Prosopium_coulterii
+|                          |                  |                              +--| (86)
+|                          |                  |                              |  |  +--KF536940_Prosopium_coulterii
+|                          |                  |                              |  +--| (99)
+|                          |                  |                              |     +--KF536943_Prosopium_coulterii
+|                          |                  |                          +---| (88)
+|                          |                  |                          |   |  +--EU202655_Prosopium_coulterii
+|                          |                  |                          |   +--| (95)
+|                          |                  |                          |      +--EU525103_Prosopium_coulterii
+|                          |                  +--------------------------| (100)
+|                          |                                             |  +--KT630728_Prosopium_coulterii
+|                          |                                             +--| (87)
+|                          |                                                +--KT630730_Prosopium_coulterii
+|                       +--| (95)
+|                       |  |   +--EU524489_Coregonus_huntsmani
+|                       |  +---| (100)
+|                       |      +--JX960886_Coregonus_huntsmani
+|                    +--| (98)
+|                    |  |        +--EU202658_Stenodus_leucichthys
+|                    |  |     +--| (55)
+|                    |  |     |  +--EU522428_Stenodus_leucichthys
+|                    |  |  +--| (48)
+|                    |  |  |  |  +--KT630715_Stenodus_leucichthys
+|                    |  |  |  +--| (73)
+|                    |  |  |     +--KT630716_Stenodus_leucichthys
+|                    |  +--| (99)
+|                    |     |  +--EU522426_Stenodus_leucichthys
+|                    |     +--| (100)
+|                    |        +--EU522427_Stenodus_leucichthys
+|                 +--| (89)
+|                 |  |           +--EU202649_Coregonus_autumnalis
+|                 |  |        +--| (35)
+|                 |  |        |  +--EU523946_Coregonus_autumnalis
+|                 |  |     +--| (31)
+|                 |  |     |  +--EU523948_Coregonus_autumnalis
+|                 |  |  +--| (94)
+|                 |  |  |  |  +--KX958407_Coregonus_autumnalis
+|                 |  |  |  +--| (62)
+|                 |  |  |     +--KX958408_Coregonus_autumnalis
+|                 |  +--| (99)
+|                 |     |                       +--EU202650_Coregonus_laurettae
+|                 |     |                    +--| (27)
+|                 |     |                    |  +--EU523966_Coregonus_laurettae
+|                 |     |                 +--| (25)
+|                 |     |                 |  |  +--EU523967_Coregonus_laurettae
+|                 |     |                 |  +--| (36)
+|                 |     |                 |     +--EU523971_Coregonus_laurettae
+|                 |     |              +--| (31)
+|                 |     |              |  |  +--JX960888_Coregonus_laurettae
+|                 |     |              |  +--| (31)
+|                 |     |              |     |  +--KT583726_Coregonus_laurettae
+|                 |     |              |     +--| (46)
+|                 |     |              |        +--KT583727_Coregonus_laurettae
+|                 |     |           +--| (97)
+|                 |     |           |  +--EU523970_Coregonus_laurettae
+|                 |     |        +--| (48)
+|                 |     |        |  |           +--EU523939_Coregonus_artedi
+|                 |     |        |  |        +--| (48)
+|                 |     |        |  |        |  +--JX960879_Coregonus_artedi
+|                 |     |        |  |     +--| (13)
+|                 |     |        |  |     |  |  +--EU523961_Coregonus_hoyi
+|                 |     |        |  |     |  +--| (28)
+|                 |     |        |  |     |     +--JX960887_Coregonus_kiyi
+|                 |     |        |  |  +--| (45)
+|                 |     |        |  |  |  |     +--EU523981_Coregonus_nigripinnis
+|                 |     |        |  |  |  |  +--| (97)
+|                 |     |        |  |  |  |  |  +--MH301055_Coregonus_artedi
+|                 |     |        |  |  |  +--| (13)
+|                 |     |        |  |  |     +--KX145095_Coregonus_nigripinnis
+|                 |     |        |  +--| (45)
+|                 |     |        |     +--EU523963_Coregonus_hoyi
+|                 |     |     +--| (21)
+|                 |     |     |  |     +--EU523942_Coregonus_artedi
+|                 |     |     |  |  +--| (36)
+|                 |     |     |  |  |  +--JX960878_Coregonus_artedi
+|                 |     |     |  +--| (57)
+|                 |     |     |     +--JX960885_Coregonus_hoyi
+|                 |     |  +--| (69)
+|                 |     |  |  +--KX145234_Coregonus_nigripinnis
+|                 |     +--| (91)
+|                 |        +--KP978026_Coregonus_artedi
+|              +--| (98)
+|              |  |                                +--EU202653_Coregonus_sardinella
+|              |  |                             +--| (19)
+|              |  |                             |  |           +--EU523982_Coregonus_sardinella
+|              |  |                             |  |        +--| (20)
+|              |  |                             |  |        |  |     +--JX960877_Coregonus_albula
+|              |  |                             |  |        |  |  +--| (17)
+|              |  |                             |  |        |  |  |  |              +--KM286536_Coregonus_albula
+|              |  |                             |  |        |  |  |  |           +--| (42)
+|              |  |                             |  |        |  |  |  |           |  +--KM286537_Coregonus_albula
+|              |  |                             |  |        |  |  |  |        +--| (98)
+|              |  |                             |  |        |  |  |  |        |  |     +--KM286570_Coregonus_albula
+|              |  |                             |  |        |  |  |  |        |  |  +--| (47)
+|              |  |                             |  |        |  |  |  |        |  |  |  +--KM286587_Coregonus_albula
+|              |  |                             |  |        |  |  |  |        |  +--| (59)
+|              |  |                             |  |        |  |  |  |        |     |  +--KM286588_Coregonus_albula
+|              |  |                             |  |        |  |  |  |        |     +--| (71)
+|              |  |                             |  |        |  |  |  |        |        +--KM286608_Coregonus_lucinensis
+|              |  |                             |  |        |  |  |  |     +--| (26)
+|              |  |                             |  |        |  |  |  |     |  +--KX457959_Coregonus_albula
+|              |  |                             |  |        |  |  |  |  +--| (19)
+|              |  |                             |  |        |  |  |  |  |  |  +--KM286586_Coregonus_albula
+|              |  |                             |  |        |  |  |  |  |  +--| (99)
+|              |  |                             |  |        |  |  |  |  |     +--MT833789_Coregonus_albula
+|              |  |                             |  |        |  |  |  +--| (20)
+|              |  |                             |  |        |  |  |     +--KX457956_Coregonus_albula
+|              |  |                             |  |        |  +--| (23)
+|              |  |                             |  |        |     |     +--KJ128463_Coregonus_albula
+|              |  |                             |  |        |     |  +--| (28)
+|              |  |                             |  |        |     |  |  +--KM286592_Coregonus_albula
+|              |  |                             |  |        |     +--| (44)
+|              |  |                             |  |        |        +--MH807245_Coregonus_sardinella
+|              |  |                             |  |     +--| (5)
+|              |  |                             |  |     |  |        +--HQ960662_Coregonus_peled
+|              |  |                             |  |     |  |     +--| (99)
+|              |  |                             |  |     |  |     |  |  +--MF632322_Coregonus_peled
+|              |  |                             |  |     |  |     |  +--| (75)
+|              |  |                             |  |     |  |     |     +--MH807251_Coregonus_sardinella
+|              |  |                             |  |     |  |  +--| (26)
+|              |  |                             |  |     |  |  |  +--KM286582_Coregonus_albula
+|              |  |                             |  |     |  +--| (19)
+|              |  |                             |  |     |     |  +--KM286540_Coregonus_albula
+|              |  |                             |  |     |     +--| (18)
+|              |  |                             |  |     |        +--KM286581_Coregonus_albula
+|              |  |                             |  |  +--| (20)
+|              |  |                             |  |  |  |        +--EU523983_Coregonus_sardinella
+|              |  |                             |  |  |  |     +--| (98)
+|              |  |                             |  |  |  |     |  +--KX457957_Coregonus_albula
+|              |  |                             |  |  |  |  +--| (26)
+|              |  |                             |  |  |  |  |  +--KM286544_Coregonus_albula
+|              |  |                             |  |  |  +--| (12)
+|              |  |                             |  |  |     +--JX960876_Coregonus_albula
+|              |  |                             |  +--| (15)
+|              |  |                             |     |              +--HQ960661_Coregonus_peled
+|              |  |                             |     |           +--| (95)
+|              |  |                             |     |           |  +--MF632321_Coregonus_peled
+|              |  |                             |     |        +--| (48)
+|              |  |                             |     |        |  +--MH807243_Coregonus_sardinella
+|              |  |                             |     |     +--| (29)
+|              |  |                             |     |     |  +--KM286539_Coregonus_albula
+|              |  |                             |     |  +--| (30)
+|              |  |                             |     |  |  +--KJ128461_Coregonus_albula
+|              |  |                             |     +--| (19)
+|              |  |                             |        |     +--KM286533_Coregonus_albula
+|              |  |                             |        |  +--| (33)
+|              |  |                             |        |  |  +--KM286541_Coregonus_albula
+|              |  |                             |        +--| (31)
+|              |  |                             |           |  +--KM286559_Coregonus_albula
+|              |  |                             |           +--| (29)
+|              |  |                             |              +--MF632323_Coregonus_nasus
+|              |  |                          +--| (13)
+|              |  |                          |  +--KM286535_Coregonus_albula
+|              |  |                       +--| (17)
+|              |  |                       |  |  +--EU523987_Coregonus_sardinella
+|              |  |                       |  +--| (16)
+|              |  |                       |     |  +--KM286591_Coregonus_albula
+|              |  |                       |     +--| (17)
+|              |  |                       |        |     +--KT630719_Coregonus_sardinella
+|              |  |                       |        |  +--| (82)
+|              |  |                       |        |  |  +--KT630721_Coregonus_sardinella
+|              |  |                       |        +--| (15)
+|              |  |                       |           |  +--KU867883_Coregonus_sardinella
+|              |  |                       |           +--| (19)
+|              |  |                       |              +--MF632324_Coregonus_peled
+|              |  |                    +--| (44)
+|              |  |                    |  |  +--KM286534_Coregonus_albula
+|              |  |                    |  +--| (99)
+|              |  |                    |     +--KM286560_Coregonus_albula
+|              |  |                 +**| (16)
+|              |  |                 |  +--KM286543_Coregonus_albula
+|              |  |              +--| (16)
+|              |  |              |  +--KM286593_Coregonus_albula
+|              |  |           +--| (10)
+|              |  |           |  +--KM286547_Coregonus_albula
+|              |  |        +--| (60)
+|              |  |        |  |  +--KM286550_Coregonus_albula
+|              |  |        |  +--| (11)
+|              |  |        |     |  +--KM286575_Coregonus_albula
+|              |  |        |     +--| (26)
+|              |  |        |        |  +--MT833787_Coregonus_albula
+|              |  |        |        +--| (97)
+|              |  |        |           +--MT833790_Coregonus_albula
+|              |  |     +--| (32)
+|              |  |     |  +--KX457958_Coregonus_albula
+|              |  |  +--| (100)
+|              |  |  |  |  +--HQ960631_Coregonus_maraena
+|              |  |  |  +--| (93)
+|              |  |  |     +--MF632325_Coregonus_peled
+|              |  +--| (45)
+|              |     +------JX960901_Coregonus_tugun
+|           +--| (48)
+|           |  +--JX960902_Coregonus_ussuriensis
+|        +--| (67)
+|        |  |                 +--EU202652_Coregonus_nasus
+|        |  |              +--| (30)
+|        |  |              |  +--EU523976_Coregonus_nasus
+|        |  |           +--| (44)
+|        |  |           |  +--EU523973_Coregonus_nasus
+|        |  |        +--| (40)
+|        |  |        |  |           +--KT630722_Coregonus_nasus
+|        |  |        |  |        +--| (33)
+|        |  |        |  |        |  +--KT630724_Coregonus_nasus
+|        |  |        |  |     +--| (25)
+|        |  |        |  |     |  |  +--KU867881_Coregonus_nasus
+|        |  |        |  |     |  +--| (53)
+|        |  |        |  |     |     +--KU867882_Coregonus_nasus
+|        |  |        |  |  +--| (25)
+|        |  |        |  |  |  +--MF632312_Coregonus_nasus
+|        |  |        |  +--| (49)
+|        |  |        |     |  +--MF632313_Coregonus_nasus
+|        |  |        |     +--| (27)
+|        |  |        |        +--MH807247_Coregonus_nasus
+|        |  |     +--| (43)
+|        |  |     |  +--EU523979_Coregonus_nasus
+|        |  |  +--| (57)
+|        |  |  |  +--JQ390058_Coregonus_nasus
+|        |  +--| (86)
+|        |     +--MF632314_Coregonus_nasus
+|     +--| (97)
+|     |  |              +--JX960891_Coregonus_migratorius
+|     |  |           +--| (67)
+|     |  |           |  |     +--MF632318_Coregonus_migratorius
+|     |  |           |  |  +--| (100)
+|     |  |           |  |  |  +--MN394789_Coregonus_migratorius
+|     |  |           |  +--| (97)
+|     |  |           |     |  +--MN394785_Coregonus_baicalensis
+|     |  |           |     +--| (92)
+|     |  |           |        +--MN394786_Coregonus_baicalensis
+|     |  |        +--| (47)
+|     |  |        |  +--NC045227_Coregonus_migratorius
+|     |  |     +--| (98)
+|     |  |     |  |  +--MF632317_Coregonus_migratorius
+|     |  |     |  +--| (87)
+|     |  |     |     +--MF632319_Coregonus_migratorius
+|     |  |  +--| (75)
+|     |  |  |  +--MF632320_Coregonus_migratorius
+|     |  +--| (99)
+|     |     +--MN394788_Coregonus_migratorius
+|  +--| (96)
+|  |  |                                   +--EU427541_Coregonus_pidschian
+|  |  |                                +--| (99)
+|  |  |                                |  +--EU523956_Coregonus_clupeaformis
+|  |  |                             +--| (48)
+|  |  |                             |  +--EU523955_Coregonus_clupeaformis
+|  |  |                          +--| (98)
+|  |  |                          |  +--EU523952_Coregonus_clupeaformis
+|  |  |                       +--| (34)
+|  |  |                       |  |  +--KR733397_Coregonus_clupeaformis
+|  |  |                       |  +--| (98)
+|  |  |                       |     +--KR733412_Coregonus_clupeaformis
+|  |  |                    +--| (20)
+|  |  |                    |  +--KR733401_Coregonus_clupeaformis
+|  |  |                 +--| (12)
+|  |  |                 |  |        +--EU523957_Coregonus_clupeaformis
+|  |  |                 |  |     +--| (24)
+|  |  |                 |  |     |  |  +--KP978113_Coregonus_clupeaformis
+|  |  |                 |  |     |  +--| (99)
+|  |  |                 |  |     |     +--KR733407_Coregonus_clupeaformis
+|  |  |                 |  |  +--| (15)
+|  |  |                 |  |  |  |        +--KP978101_Coregonus_clupeaformis
+|  |  |                 |  |  |  |     +--| (99)
+|  |  |                 |  |  |  |     |  +--KP978122_Coregonus_clupeaformis
+|  |  |                 |  |  |  |  +--| (40)
+|  |  |                 |  |  |  |  |  +--KP978117_Coregonus_clupeaformis
+|  |  |                 |  |  |  +--| (13)
+|  |  |                 |  |  |     |        +--KR733391_Coregonus_clupeaformis
+|  |  |                 |  |  |     |     +--| (31)
+|  |  |                 |  |  |     |     |  |  +--KU258399_Coregonus_pidschian
+|  |  |                 |  |  |     |     |  +--| (99)
+|  |  |                 |  |  |     |     |     +--KU258400_Coregonus_pidschian
+|  |  |                 |  |  |     |  +--| (18)
+|  |  |                 |  |  |     |  |  +--KU258398_Coregonus_pidschian
+|  |  |                 |  |  |     +--| (48)
+|  |  |                 |  |  |        +--KR733406_Coregonus_clupeaformis
+|  |  |                 |  +--| (10)
+|  |  |                 |     +--KP978049_Coregonus_clupeaformis
+|  |  |              +--| (17)
+|  |  |              |  |  +--JQ661482_Coregonus_clupeaformis
+|  |  |              |  +--| (11)
+|  |  |              |     |  +--KP978148_Coregonus_clupeaformis
+|  |  |              |     +--| (20)
+|  |  |              |        +--KR733409_Coregonus_clupeaformis
+|  |  |           +--| (17)
+|  |  |           |  +--EU523958_Coregonus_clupeaformis
+|  |  |        +--| (27)
+|  |  |        |  |  +--KP978055_Coregonus_clupeaformis
+|  |  |        |  +--| (19)
+|  |  |        |     |              +--KP978118_Coregonus_clupeaformis
+|  |  |        |     |           +--| (100)
+|  |  |        |     |           |  +--KP978120_Coregonus_clupeaformis
+|  |  |        |     |        +--| (21)
+|  |  |        |     |        |  +--KR733421_Coregonus_clupeaformis
+|  |  |        |     |     +--| (10)
+|  |  |        |     |     |  |  +--KR733419_Coregonus_clupeaformis
+|  |  |        |     |     |  +--| (13)
+|  |  |        |     |     |     +--MH807244_Coregonus_pidschian
+|  |  |        |     |  +--| (18)
+|  |  |        |     |  |  +--KR733403_Coregonus_clupeaformis
+|  |  |        |     +--| (50)
+|  |  |        |        +--KP978199_Coregonus_clupeaformis
+|  |  |     +--| (41)
+|  |  |     |  +--KP978039_Coregonus_clupeaformis
+|  |  |  +--| (98)
+|  |  |  |  +--KR733394_Coregonus_clupeaformis
+|  |  +--| (98)
+|  |     +--JQ390060_Coregonus_clupeaformis
++--| (27)
+|  |           +--EU202651_Coregonus_pidschian
+|  |        +--| (6)
+|  |        |  +--HM902202_Salmoniformes_sp
+|  |     +--| (3)
+|  |     |  |           +--JQ661400_Coregonus_oxyrinchus
+|  |     |  |        +--| (98)
+|  |     |  |        |  +--JQ661410_Coregonus_oxyrinchus
+|  |     |  |     +--| (40)
+|  |     |  |     |  +--KT630725_Coregonus_pidschian
+|  |     |  |  +--| (16)
+|  |     |  |  |  +--MG951552_Coregonus_lavaretus
+|  |     |  +--| (3)
+|  |     |     |     +--KM286580_Coregonus_albula
+|  |     |     |  +--| (36)
+|  |     |     |  |  +--KM286610_Coregonus_macrophthalmus
+|  |     |     +--| (10)
+|  |     |        +--KR477023_Coregonus_sp
+|  |  +--| (21)
+|  |  |  |     +--JQ661403_Coregonus_oxyrinchus
+|  |  |  |  +--| (99)
+|  |  |  |  |  +--JQ661408_Coregonus_oxyrinchus
+|  |  |  +--| (9)
+|  |  |     |     +--KC296706_Coregonus_sp
+|  |  |     |  +--| (34)
+|  |  |     |  |  +--KM286579_Coregonus_albula
+|  |  |     +--| (24)
+|  |  |        +--KM286583_Coregonus_albula
+|  +--| (22)
+|     |        +--JX960890_Coregonus_lavaretus
+|     |     +--| (21)
+|     |     |  |     +--KR477024_Coregonus_sp
+|     |     |  |  +--| (48)
+|     |     |  |  |  |  +--KR477179_Coregonus_sp
+|     |     |  |  |  +--| (48)
+|     |     |  |  |     +--KR477184_Coregonus_sp
+|     |     |  +--| (22)
+|     |     |     |  +--MF632316_Coregonus_nasus
+|     |     |     +--| (36)
+|     |     |        +--MH807246_Coregonus_pidschian
+|     |  +--| (20)
+|     |  |  +--KM286600_Coregonus_holsatus
+|     +--| (19)
+|        +--KJ128465_Coregonus_maraena
+|
++--MF632315_Coregonus_nasus
+
+
+Consensus tree in newick format: 
+
+(AB034824_Coregonus_lavaretus:0.0015485217,(((((((((((((((AP013050_Prosopium_cylindraceum:0.0000025115,EU524294_Prosopium_cylindraceum:0.0000025115)74:0.0000025115,(((KP978218_Prosopium_cylindraceum:0.0000025115,KP978219_Prosopium_cylindraceum:0.0000025115)82:0.0000025115,KP978224_Prosopium_cylindraceum:0.0015488134)99:0.0015488255,(MG951550_Prosopium_cylindraceum:0.0000025115,MG951551_Prosopium_cylindraceum:0.0015488222)99:0.0015488362)40:0.0000025115)33:0.0000025115,((((EU202656_Prosopium_cylindraceum:0.0000025115,JX960932_Prosopium_cylindraceum:0.0000025115)98:0.0015514226,(KP978217_Prosopium_cylindraceum:0.0000025115,KP978221_Prosopium_cylindraceum:0.0000025115)79:0.0000025115)99:0.0031109288,(((JQ390062_Prosopium_cylindraceum:0.0015427096,KU258411_Prosopium_cylindraceum:0.0016506692)33:0.0000010134,KT630727_Prosopium_cylindraceum:0.0016537570)30:0.0000025115,KU258410_Prosopium_cylindraceum:0.0000025115)68:0.0000025115)54:0.0000025115,(EU202657_Prosopium_cylindraceum:0.0000025115,EU524288_Prosopium_cylindraceum:0.0000025115)64:0.0000025115)99:0.0015514916)62:0.0000025115,EU524289_Prosopium_cylindraceum:0.0015481942)95:0.0236838936,(((((((EU522438_Prosopium_williamsoni:0.0000025115,JX960939_Prosopium_williamsoni:0.0000025115)69:0.0000025115,JX960938_Prosopium_williamsoni:0.0015486547)98:0.0031118659,HQ557337_Prosopium_williamsoni:0.0046980060)50:0.0000025115,EU524301_Prosopium_williamsoni:0.0000025115)46:0.0000025115,EU524304_Prosopium_williamsoni:0.0015487080)83:0.0015486901,((EU524303_Prosopium_williamsoni:0.0000025115,JQ390061_Prosopium_williamsoni:0.0000025115)76:0.0000025115,FJ918926_Prosopium_williamsoni:0.0000025115)68:0.0000025115)81:0.0026779774,((JX960929_Prosopium_abyssicola:0.0015487233,(JX960934_Prosopium_gemmifer:0.0000025115,JX960935_Prosopium_gemmifer:0.0000025115)85:0.0000025115)97:0.0015486512,JX960936_Prosopium_spilonotus:0.0000025115)96:0.0086108190)93:0.0118041037)97:0.0386716109,(((((EU202654_Prosopium_coulterii:0.0000025115,EU525104_Prosopium_coulterii:0.0000025115)72:0.0000025115,KX145332_Prosopium_coulterii:0.0015490147)76:0.0000021418,(KF536940_Prosopium_coulterii:0.0000025115,KF536943_Prosopium_coulterii:0.0000025115)99:0.0031905781)86:0.0008218947,(EU202655_Prosopium_coulterii:0.0000025115,EU525103_Prosopium_coulterii:0.0000025115)95:0.0054833761)88:0.0169108251,(KT630728_Prosopium_coulterii:0.0000025115,KT630730_Prosopium_coulterii:0.0000025115)87:0.0000029061)100:0.1066365650)100:0.0763410306,(EU524489_Coregonus_huntsmani:0.0000025115,JX960886_Coregonus_huntsmani:0.0000025115)100:0.0167195331)95:0.0066759314,(((EU202658_Stenodus_leucichthys:0.0000025115,EU522428_Stenodus_leucichthys:0.0000025115)55:0.0000025115,(KT630715_Stenodus_leucichthys:0.0000025115,KT630716_Stenodus_leucichthys:0.0000025115)73:0.0000025115)48:0.0000025115,(EU522426_Stenodus_leucichthys:0.0000025115,EU522427_Stenodus_leucichthys:0.0000025115)100:0.0015481065)99:0.0143347992)98:0.0079427646,((((EU202649_Coregonus_autumnalis:0.0000025115,EU523946_Coregonus_autumnalis:0.0000025115)35:0.0000025115,EU523948_Coregonus_autumnalis:0.0015483443)31:0.0000025115,(KX958407_Coregonus_autumnalis:0.0000025115,KX958408_Coregonus_autumnalis:0.0000025115)62:0.0000025115)94:0.0011700786,((((((((EU202650_Coregonus_laurettae:0.0000025115,EU523966_Coregonus_laurettae:0.0000025115)27:0.0000025115,(EU523967_Coregonus_laurettae:0.0015482787,EU523971_Coregonus_laurettae:0.0015482696)36:0.0000025115)25:0.0000025115,(JX960888_Coregonus_laurettae:0.0000025115,(KT583726_Coregonus_laurettae:0.0000025115,KT583727_Coregonus_laurettae:0.0000025115)46:0.0000025115)31:0.0000025115)31:0.0000025115,EU523970_Coregonus_laurettae:0.0015586087)97:0.0031111919,((((EU523939_Coregonus_artedi:0.0000025115,JX960879_Coregonus_artedi:0.0000025115)48:0.0000025115,(EU523961_Coregonus_hoyi:0.0015483125,JX960887_Coregonus_kiyi:0.0015483104)28:0.0000025115)13:0.0000025115,((EU523981_Coregonus_nigripinnis:0.0015638676,MH301055_Coregonus_artedi:0.0015563788)97:0.0015408140,KX145095_Coregonus_nigripinnis:0.0015482882)13:0.0000025115)45:0.0000025115,EU523963_Coregonus_hoyi:0.0015483124)45:0.0015482935)48:0.0000025115,((EU523942_Coregonus_artedi:0.0000025115,JX960878_Coregonus_artedi:0.0000025115)36:0.0000025115,JX960885_Coregonus_hoyi:0.0000025115)57:0.0000025115)21:0.0000025115,KX145234_Coregonus_nigripinnis:0.0015483187)69:0.0015483161,KP978026_Coregonus_artedi:0.0000025115)91:0.0019441797)99:0.0077201727)89:0.0019616825,(((((((((((EU202653_Coregonus_sardinella:0.0000025115,((((EU523982_Coregonus_sardinella:0.0000025115,((JX960877_Coregonus_albula:0.0015723491,(((((KM286536_Coregonus_albula:0.0000025115,KM286537_Coregonus_albula:0.0000025115)42:0.0000025115,((KM286570_Coregonus_albula:0.0000025115,KM286587_Coregonus_albula:0.0000025115)47:0.0000025115,(KM286588_Coregonus_albula:0.0000025115,KM286608_Coregonus_lucinensis:0.0000025115)71:0.0000025115)59:0.0000025115)98:0.0015484422,KX457959_Coregonus_albula:0.0015484393)26:0.0000025115,(KM286586_Coregonus_albula:0.0000025115,MT833789_Coregonus_albula:0.0000025115)99:0.0015484371)19:0.0000025115,KX457956_Coregonus_albula:0.0015776220)20:0.0000025115)17:0.0000025115,((KJ128463_Coregonus_albula:0.0015456968,KM286592_Coregonus_albula:0.0000025115)28:0.0000023785,MH807245_Coregonus_sardinella:0.0000025115)44:0.0000025115)23:0.0000025115)20:0.0000025115,(((HQ960662_Coregonus_peled:0.0000025115,(MF632322_Coregonus_peled:0.0000025115,MH807251_Coregonus_sardinella:0.0000025115)75:0.0000025115)99:0.0015484192,KM286582_Coregonus_albula:0.0015498466)26:0.0000025115,(KM286540_Coregonus_albula:0.0000025115,KM286581_Coregonus_albula:0.0015545496)18:0.0000025115)19:0.0000025115)5:0.0000025115,(((EU523983_Coregonus_sardinella:0.0047210343,KX457957_Coregonus_albula:0.0000025115)98:0.0015485935,KM286544_Coregonus_albula:0.0015484132)26:0.0000025115,JX960876_Coregonus_albula:0.0015483826)12:0.0000025115)20:0.0000025115,(((((HQ960661_Coregonus_peled:0.0023282761,MF632321_Coregonus_peled:0.0000025115)95:0.0023282571,MH807243_Coregonus_sardinella:0.0000025115)48:0.0000025115,KM286539_Coregonus_albula:0.0015587063)29:0.0000025115,KJ128461_Coregonus_albula:0.0000025115)30:0.0000025115,((KM286533_Coregonus_albula:0.0000025115,KM286541_Coregonus_albula:0.0000025115)33:0.0000025115,(KM286559_Coregonus_albula:0.0015545397,MF632323_Coregonus_nasus:0.0016189667)29:0.0000025115)31:0.0000025115)19:0.0000025115)15:0.0000025115)19:0.0000025115,KM286535_Coregonus_albula:0.0000025115)13:0.0000025115,(EU523987_Coregonus_sardinella:0.0015483861,(KM286591_Coregonus_albula:0.0000025115,((KT630719_Coregonus_sardinella:0.0016070245,KT630721_Coregonus_sardinella:0.0000025115)82:0.0016099278,(KU867883_Coregonus_sardinella:0.0000025115,MF632324_Coregonus_peled:0.0000025115)19:0.0000025115)15:0.0000025115)17:0.0000025115)16:0.0000025115)17:0.0000025115,(KM286534_Coregonus_albula:0.0000025115,KM286560_Coregonus_albula:0.0000025115)99:0.0015587036)44:0.0003724941,KM286543_Coregonus_albula:0.0000025115)16:0.0000013151,KM286593_Coregonus_albula:0.0000025115)16:0.0000025115,KM286547_Coregonus_albula:0.0088250473)10:0.0002645992,(KM286550_Coregonus_albula:0.0000025115,(KM286575_Coregonus_albula:0.0000025115,(MT833787_Coregonus_albula:0.0000025115,MT833790_Coregonus_albula:0.0000025115)97:0.0015178718)26:0.0000025858)11:0.0000025115)60:0.0009297031,KX457958_Coregonus_albula:0.0078932802)32:0.0000025115,(HQ960631_Coregonus_maraena:0.0000025115,MF632325_Coregonus_peled:0.0000025115)93:0.0015489642)100:0.0059222861,JX960901_Coregonus_tugun:0.0272432019)45:0.0000025115)98:0.0034986923,JX960902_Coregonus_ussuriensis:0.0097351675)48:0.0000022595,((((((EU202652_Coregonus_nasus:0.0000025115,EU523976_Coregonus_nasus:0.0000025115)30:0.0000025115,EU523973_Coregonus_nasus:0.0000025115)44:0.0000025115,((((KT630722_Coregonus_nasus:0.0000025115,KT630724_Coregonus_nasus:0.0000025115)33:0.0000025115,(KU867881_Coregonus_nasus:0.0017574307,KU867882_Coregonus_nasus:0.0000025115)53:0.0000025115)25:0.0000025115,MF632312_Coregonus_nasus:0.0016079766)25:0.0000025115,(MF632313_Coregonus_nasus:0.0000025115,MH807247_Coregonus_nasus:0.0000025115)27:0.0000025115)49:0.0000025115)40:0.0000025115,EU523979_Coregonus_nasus:0.0031117412)43:0.0000025115,JQ390058_Coregonus_nasus:0.0047174768)57:0.0000025115,MF632314_Coregonus_nasus:0.0016077726)86:0.0031136027)67:0.0015426479,(((((JX960891_Coregonus_migratorius:0.0015607158,((MF632318_Coregonus_migratorius:0.0000025115,MN394789_Coregonus_migratorius:0.0015487692)100:0.0015487824,(MN394785_Coregonus_baicalensis:0.0000025115,MN394786_Coregonus_baicalensis:0.0000025115)92:0.0000025115)97:0.0015485433)67:0.0000025115,NC045227_Coregonus_migratorius:0.0000025115)47:0.0000025115,(MF632317_Coregonus_migratorius:0.0000025115,MF632319_Coregonus_migratorius:0.0000025115)87:0.0000025115)98:0.0015485531,MF632320_Coregonus_migratorius:0.0000025115)75:0.0000025115,MN394788_Coregonus_migratorius:0.0015485425)99:0.0031281352)97:0.0015842679,((((((((((((EU427541_Coregonus_pidschian:0.0000025115,EU523956_Coregonus_clupeaformis:0.0000025115)99:0.0015486013,EU523955_Coregonus_clupeaformis:0.0015486044)48:0.0000025115,EU523952_Coregonus_clupeaformis:0.0015486080)98:0.0015486116,(KR733397_Coregonus_clupeaformis:0.0015588018,KR733412_Coregonus_clupeaformis:0.0000025115)98:0.0015484645)34:0.0000025115,KR733401_Coregonus_clupeaformis:0.0000025115)20:0.0000025115,(((EU523957_Coregonus_clupeaformis:0.0015484480,(KP978113_Coregonus_clupeaformis:0.0000025115,KR733407_Coregonus_clupeaformis:0.0000025115)99:0.0015484366)24:0.0000025115,(((KP978101_Coregonus_clupeaformis:0.0000025115,KP978122_Coregonus_clupeaformis:0.0000025115)99:0.0015484486,KP978117_Coregonus_clupeaformis:0.0015484527)40:0.0000025115,(((KR733391_Coregonus_clupeaformis:0.0000025115,(KU258399_Coregonus_pidschian:0.0000025115,KU258400_Coregonus_pidschian:0.0000025115)99:0.0031833968)31:0.0000026436,KU258398_Coregonus_pidschian:0.0000025115)18:0.0000025151,KR733406_Coregonus_clupeaformis:0.0000025115)48:0.0000025151)13:0.0000025115)15:0.0000025115,KP978049_Coregonus_clupeaformis:0.0000025115)10:0.0000025115)12:0.0000025115,(JQ661482_Coregonus_clupeaformis:0.0000025115,(KP978148_Coregonus_clupeaformis:0.0015587900,KR733409_Coregonus_clupeaformis:0.0000025115)20:0.0000025115)11:0.0000025115)17:0.0000025115,EU523958_Coregonus_clupeaformis:0.0000025115)17:0.0000025115,(KP978055_Coregonus_clupeaformis:0.0015484612,(((((KP978118_Coregonus_clupeaformis:0.0000025115,KP978120_Coregonus_clupeaformis:0.0000025115)100:0.0015383442,KR733421_Coregonus_clupeaformis:0.0000025115)21:0.0000025249,(KR733419_Coregonus_clupeaformis:0.0000025115,MH807244_Coregonus_pidschian:0.0000025115)13:0.0000025115)10:0.0000025115,KR733403_Coregonus_clupeaformis:0.0000025115)18:0.0000025115,KP978199_Coregonus_clupeaformis:0.0000025115)50:0.0000025115)19:0.0000025115)27:0.0000025115,KP978039_Coregonus_clupeaformis:0.0015587470)41:0.0000025115,KR733394_Coregonus_clupeaformis:0.0015484942)98:0.0015484982,JQ390060_Coregonus_clupeaformis:0.0000025115)98:0.0015415620)96:0.0015715986,((((EU202651_Coregonus_pidschian:0.0000025115,HM902202_Salmoniformes_sp:0.0000025115)6:0.0000025115,((((JQ661400_Coregonus_oxyrinchus:0.0000025115,JQ661410_Coregonus_oxyrinchus:0.0000025115)98:0.0015455591,KT630725_Coregonus_pidschian:0.0000025115)40:0.0000029216,MG951552_Coregonus_lavaretus:0.0015588403)16:0.0000025115,((KM286580_Coregonus_albula:0.0000025115,KM286610_Coregonus_macrophthalmus:0.0016673278)36:0.0000025115,KR477023_Coregonus_sp:0.0000025115)10:0.0000025115)3:0.0000025115)3:0.0000025115,((JQ661403_Coregonus_oxyrinchus:0.0000025115,JQ661408_Coregonus_oxyrinchus:0.0000025115)99:0.0015574693,((KC296706_Coregonus_sp:0.0000025115,KM286579_Coregonus_albula:0.0000025115)34:0.0000025115,KM286583_Coregonus_albula:0.0000025115)24:0.0000025115)9:0.0000025115)21:0.0000025115,(((JX960890_Coregonus_lavaretus:0.0000025115,((KR477024_Coregonus_sp:0.0000025115,(KR477179_Coregonus_sp:0.0000025115,KR477184_Coregonus_sp:0.0000025115)48:0.0000025115)48:0.0000025115,(MF632316_Coregonus_nasus:0.0000025115,MH807246_Coregonus_pidschian:0.0000025115)36:0.0000025115)22:0.0000025115)21:0.0000025115,KM286600_Coregonus_holsatus:0.0015621325)20:0.0000025115,KJ128465_Coregonus_maraena:0.0000025115)19:0.0000025115)22:0.0000025115)27:0.0000025115,MF632315_Coregonus_nasus:0.0016079550);
+
+TIME STAMP
+----------
+
+Date and time: Fri Nov 19 16:16:53 2021
+Total CPU time used: 281.400573 seconds (0h:4m:41s)
+Total wall-clock time used: 311.3857701 seconds (0h:5m:11s)
+
